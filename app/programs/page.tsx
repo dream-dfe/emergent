@@ -1,10 +1,12 @@
-import React from 'react'
-import ProgramsList from './ProgramsList'
+import ProgramsList from "./ProgramsList";
 
 const ProgramsPage = () => {
   return (
-  <ProgramsList/>
-  )
-}
+    <>
+      
+      <ProgramsList />
+    </>
+  );
+};
 
-export default ProgramsPage
+export default ProgramsPage;

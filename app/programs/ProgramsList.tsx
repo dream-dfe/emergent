@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import React from "react";
-import DiscloseDetails from "./DiscloseDetails";
 import Container from "../components/common/Container";
 import { programsData } from "@/lib/data";
 import { BsFillCheckCircleFill } from "react-icons/bs";
@@ -11,6 +10,10 @@ import { GoDotFill } from "react-icons/go";
 const ProgramsList = () => {
   return (
     <Container>
+        <div className="mx-auto max-w-screen-sm text-center my-8 lg:mb-16">
+          <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-main-purple ">Programs</h2>
+          <p className="font-light text-gray-500 lg:mb-16 sm:text-xl "> Emergent Academy serves as a dynamic technology hub dedicated to uplifting and economically empowering disadvantaged youth and learners residing in low-income communities. With a track record spanning over five years, our academy has continually offered a range of impactful programs</p>
+      </div> 
       {programsData.map((program) => (
         <section
           className="overflow-hidden  py-20  sm:grid sm:grid-cols-2"
@@ -53,7 +56,7 @@ const ProgramsList = () => {
 
           <div className="hidden mt-4 md:block">
             <Image
-              src="/programs/business.png"
+              src={program.imageSrc}
               width={4036}
               height={1461}
               alt="accelerator"
