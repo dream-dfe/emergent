@@ -1,10 +1,14 @@
-import React from 'react'
-import OurTeam from './OurTeam'
+
+import OurTeam from "./OurTeam";
+import AboutUs from "./AboutUs";
 
 const AboutPage = () => {
   return (
-    <OurTeam/>
-  )
-}
+    <>
+      <AboutUs />
+      <OurTeam />
+    </>
+  );
+};
 
-export default AboutPage
+export default AboutPage;

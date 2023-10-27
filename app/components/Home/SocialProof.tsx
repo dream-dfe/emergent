@@ -7,7 +7,7 @@ const SocialProof = () => {
         <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
           <div>
             <div className="flex flex-col items-center justify-center">
-              <dt className="mb-2 text-3xl md:text-4xl text-main-purple font-bold">120+</dt>
+              <dt className="mb-2 text-3xl md:text-4xl text-slate-600 font-bold">120+</dt>
               <dd className="font-light ">
                 young women trained every year
               </dd>
@@ -15,7 +15,7 @@ const SocialProof = () => {
           </div>
           <div>
             <div className="flex flex-col items-center justify-center">
-              <dt className="mb-2 text-3xl md:text-4xl  text-main-purple font-bold">40+</dt>
+              <dt className="mb-2 text-3xl md:text-4xl  text-slate-600 font-bold">40+</dt>
               <dd className="font-light ">
                 startups enrolled in the business accelerator 
               </dd>
@@ -23,7 +23,7 @@ const SocialProof = () => {
           </div>
           <div>
             <div className="flex flex-col items-center justify-center">
-              <dt className="mb-2 text-3xl md:text-4xl  text-main-purple font-bold">1200+</dt>
+              <dt className="mb-2 text-3xl md:text-4xl  text-slate-600 font-bold">1200+</dt>
               <dd className="font-light ">
                 Dodigi entrepreneurs supported 
               </dd>

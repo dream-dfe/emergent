@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="mx-auto max-w-screen-xl text-center">
           <div className="flex justify-center items-center ">
             <Link href="/" className="outline-none">
-              <Image src="/logo.png" width={195} height={30} alt="logo" />
+            <span className="self-center text-2xl font-bold text-purple-900 whitespace-nowrap ">Emergent Academy</span>
             </Link>
           </div>
 

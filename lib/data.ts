@@ -39,7 +39,7 @@ export const teamMembers = [
 export const programsData = [
   {
     title: "Emergent Women Program",
-    imageSrc: "/women.png",
+    imageSrc: "/emergelad.jpeg",
     descr:
       "Our Emergent Women Program equips young individuals, primarily women aged 18-25, with essential skills in entrepreneurship, personal development, and digital literacy. Participants engage in both in-person and online classes to acquire these competencies.",
     details: {
@@ -64,9 +64,9 @@ export const programsData = [
   },
   {
     title: "Emergent Business Accelerator Program",
-    imageSrc: "/programs/business.png",
+    imageSrc: "/programs/businessacc.png",
     descr:
-      "The emergent business accelerator is dedicated to supporting women entrepreneurs in their startup ventures.",
+      " Women-led Business to Scale: Closing the financial and digital access gap for the scale of WSMEs in low-inco​​me communities. Making entrepreneurship a viable economic pathway for women. ",
     details: {
       target: " Women leading startup and post-revenue businesses.",
       skills:
@@ -87,9 +87,9 @@ export const programsData = [
   },
   {
     title: "DoDigi Program",
-    imageSrc: "/dodigi.png",
+    imageSrc: "/programs/dodigipart.png",
     descr:
-      "The Dodigi Program, a unique initiative within Emergent Academy, targets individuals interested in entrepreneurship or those with business aspirations. This program immerses participants in the realm of digital technologies, allowing them to gain hands-on experience in leveraging technology for their business ventures.",
+      "DoDigi is a digital solution for SMMEs in low income communities. It is an online project that enables women-led SMMEs in low income communities to learn how to, and to open digital channels for their businesses. ",
     details: {
       target: "Aspiring and post-revenue entrepreneurs",
       skills: "Business and technology (Bizz-tech)& entrepreneurship",

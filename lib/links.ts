@@ -9,8 +9,12 @@ export const headerLinks = [
     },
     
     {
-        title: "About",
+        title: "About Us",
         url: '/about'
+    },
+    {
+        title: "Pay it Forward",
+        url: '/pay-it-forward'
     },
 ];
 

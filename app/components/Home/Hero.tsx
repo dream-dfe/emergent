@@ -3,34 +3,20 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section className="relative bg-[url(/hero1.png)] bg-cover bg-center bg-no-repeat">
-      <div className="absolute inset-0 bg-gradient-to-r     from-main-yellow/80 to-white/50  lg:from-main-yellow/80 "></div>
-
-      <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
-        <div className="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
-          <h1 className="text-3xl font-extrabold sm:text-5xl text-white">
-            We create a new narrative for
-            <strong className="block font-extrabold text-main-purple">
-              Marginalized Youth
-            </strong>
-          </h1>
-
-          <p className="mt-4 max-w-lg sm:text-xl/relaxed">
-            Particularly young women who live in low-income township and rural
-            communities
-          </p>
-
-          <div className="mt-8 flex flex-wrap gap-4 text-center">
-            <Link
-              href="/programs"
-              className="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-main-purple shadow  sm:w-auto"
-            >
-              Learn More
-            </Link>
-          </div>
+    <section className="pt-24 bg-white">
+    <div className="px-12 mx-auto max-w-7xl">
+        <div className="w-full mx-auto text-center  md:w-11/12 xl:w-9/12 ">
+            <h1 className="mb-8 text-2xl inline-flex items-center font-extrabold leading-none tracking-normal text-slate-800 md:text-6xl md:tracking-tight">
+                <span>Emergent </span> <span className="block w-full py-2 pl-3 text-transparent bg-clip-text leading-12 bg-gradient-to-r from-slate-600 to-purple-600 ">  Academy</span> 
+            </h1>
+            <p className="px-0 mb-8 text-lg text-slate-600 md:text-xl lg:px-24">
+            An entrepreneurship and technology hub dedicated to training and supporting disadvantaged youth and women residing in low-income communities towards economic independence and sustainable livelihoods. 
+            </p>
+            
+         
         </div>
-      </div>
-    </section>
+    </div>
+</section>
   );
 };
 

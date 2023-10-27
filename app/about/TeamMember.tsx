@@ -16,7 +16,7 @@ const TeamMember = ({ name, role,  imageSrc }: TeamMemberProps) => {
             </div>
           </div>
           <div className="px-6 mt-8">
-            <div className="font-bold text-xl text-main-purple text-center pb-1">{name}</div>
+            <div className="font-bold text-xl text-gray-900 text-center pb-1">{name}</div>
             <p className="text-gray-800 text-sm text-center">{role}</p>
             <div className="w-full flex justify-center pt-5 pb-5">
             
