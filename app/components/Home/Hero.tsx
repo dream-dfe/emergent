@@ -1,37 +1,25 @@
-import Link from "next/link";
-import React from "react";
+import Image from "next/image";
 
-const Hero = () => {
+const HeroSection = () => {
   return (
-    <section className="relative bg-[url(/hero1.png)] bg-cover bg-center bg-no-repeat">
-      <div className="absolute inset-0 bg-gradient-to-r     from-main-yellow/80 to-white/50  lg:from-main-yellow/80 "></div>
-
-      <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
-        <div className="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
-          <h1 className="text-3xl font-extrabold sm:text-5xl text-white">
-            We create a new narrative for
-            <strong className="block font-extrabold text-main-purple">
-              Marginalized Youth
-            </strong>
+    <section className="relative  flex items-center justify-center sm:h-[100vh]  bg-[url('/hero-img.png')] bg-no-repeat bg-cover bg-blend-saturation ">
+      <div className="absolute inset-0 bg-violet-700 text-white py-8 opacity-50"></div>
+      <div className="relative px-12 mx-auto max-w-7xl  z-5">
+        <div className="w-full mx-auto text-center md:w-11/12 xl:w-9/12 ">
+          <h1 className="mb-8 text-4xl font-extrabold leading-none tracking-normal text-slate-200 md:text-6xl md:tracking-tight">
+            <span>Empowering </span>{" "}
+            <span className="block w-full py-2 text-transparent bg-clip-text leading-12 bg-gradient-to-r from-slate-100 to-yellow-500 lg:inline">
+              vulnerable{" "}
+            </span>{" "}
+            <span>youth</span>
           </h1>
-
-          <p className="mt-4 max-w-lg sm:text-xl/relaxed">
-            Particularly young women who live in low-income township and rural
-            communities
+          <p className="px-0 mb-8 text-lg  text-slate-200 md:text-xl lg:px-24">
+            through entrepreneurship and technology
           </p>
-
-          <div className="mt-8 flex flex-wrap gap-4 text-center">
-            <Link
-              href="/programs"
-              className="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-main-purple shadow  sm:w-auto"
-            >
-              Learn More
-            </Link>
-          </div>
         </div>
       </div>
     </section>
   );
 };
 
-export default Hero;
+export default HeroSection;

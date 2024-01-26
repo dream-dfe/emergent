@@ -1,6 +1,7 @@
 import Hero from "./components/Home/Hero";
+import ImpactStories from "./components/Home/ImpactStories";
 import OurPartners from "./components/Home/OurPartners";
-import OurPrograms from "./components/Home/OurPrograms";
+import OurStory from "./components/Home/OurStory";
 import SocialProof from "./components/Home/SocialProof";
 import CTA from "./components/common/CTA";
 
@@ -9,10 +10,11 @@ export default function Home() {
   return (
     <main className="">
          <Hero/>
-         <OurPrograms/>
-         <SocialProof/>
+         <OurStory/>
+         <ImpactStories/>
+         {/* <SocialProof/>
          <OurPartners/>
-         <CTA/>
+         <CTA/> */}
 
     </main>
   )
