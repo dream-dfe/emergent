@@ -19,7 +19,7 @@ export default function HeaderPopOver() {
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="font-semibold text-lg text-slate-600">
+          <NavigationMenuTrigger className="font-semibold text-base text-slate-600">
             What we do
           </NavigationMenuTrigger>
           <NavigationMenuContent >

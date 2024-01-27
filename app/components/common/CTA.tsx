@@ -1,27 +1,20 @@
 import Link from "next/link";
-import React from "react";
-import { BsPaypal } from "react-icons/bs";
+import { Button } from "@/components/ui/button";
+
 
 const CTA = () => {
   return (
-    <section className="bg-gray-50">
+    <section className="bg-violet-200">
       <div className="p-8 md:p-12 lg:px-16 lg:py-24">
         <div className="mx-auto max-w-lg text-center">
-          <h2 className="text-2xl font-bold text-gray-900 md:text-3xl">
+          <h2 className="text-2xl font-bold  md:text-3xl">
             Help us make a difference
           </h2>
         </div>
 
         <div className="mx-auto mt-8 max-w-sm">
-        <Link
-          href="/"
-          className="flex relative items-center p-2 space-x-4 justify-center rounded-md border text-gray-600 border-gray-300 hover:bg-gray-100 "
-        >
-          <span className=" font-bold ">Sponsor</span>
-          <BsPaypal size={18} />
-        </Link>
-
-                  </div>
+          <Button className="w-full"> {`"Support Our Work"`} </Button>
+        </div>
       </div>
     </section>
   );

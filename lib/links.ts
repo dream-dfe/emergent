@@ -36,15 +36,15 @@ export const ourworkLinks = [
     href: "/pastwork",
   },
   {
-    id: "currentwork",
-    name: "Current Work",
+    id: "present",
+    name: "Present",
     description: "Activities you can be part of",
-    href: "/currentwork",
+    href: "/presentwork",
   },
   {
-    id: "futurework",
-    name: "Future Work",
+    id: "openwork",
+    name: "Open",
     description: "What we plan to do",
-    href: "/futurework",
+    href: "/openwork",
   },
 ];

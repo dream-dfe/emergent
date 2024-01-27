@@ -110,3 +110,36 @@ export const programsData = [
     ],
   },
 ];
+
+
+export const ImpactStoriesData = [
+  {
+    id: "1",
+    img: "/img/stories/testifier1.png ",
+    person: "Kebo Rorisang",
+    org: "Good Vibes Clothing",
+    testimony: "Emergent Academy has been such a great place for me. I always had a dream that I wished one day it would become true, then I met the Emergent Academy  "
+  },
+  {
+    id: "2",
+    img: "/img/stories/testifier2.png ",
+    person: "Miranda Melvin",
+    org: "Hook & Dry Bevs",
+    testimony: "Emergent Academy has been such a great place for me.I always had a dream that I wished one day it would become true, then I met the Emergent Academy  "
+  },
+  {
+    id: "3",
+    img: "/img/stories/testifier3.png ",
+    person: "Melissa August",
+    org: "Cape Cycles",
+    testimony: "Emergent Academy has been such a great place for me. I always had a dream that I wished one day it would become true, then I met the Emergent Academy "
+  },
+  {
+    id: "4",
+    img: "/img/stories/testifier4.png ",
+    person: "Themebeka Mawande",
+    org: "Gugulethu Meats",
+    testimony: "Emergent Academy has been such a great place for me.I always had a dream that I wished one day it would become true, then I met the Emergent Academy "
+  },
+
+]

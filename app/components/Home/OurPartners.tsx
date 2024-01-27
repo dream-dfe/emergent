@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Container from "../common/Container";
 
 // Define a TypeScript interface for partner data
 interface Partner {
@@ -7,11 +8,11 @@ interface Partner {
 }
 
 const fundingPartners: Partner[] = [
-  { src: "/partners/allan.svg", alt: "Allan Gray" },
-  { src: "/partners/lemonade.svg", alt: "Lemonade" },
-  { src: "/partners/hlanganisa.svg", alt: "Hlanganisa" },
-  { src: "/partners/google.png", alt: "Google" },
-  { src: "/partners/bowmans.png", alt: "Bowmans" },
+  { src: "/img/partners/allan.svg", alt: "Allan Gray" },
+  { src: "/img/partners/lemonade.svg", alt: "Lemonade" },
+  { src: "/img/partners/hlanganisa.svg", alt: "Hlanganisa" },
+  { src: "/img/partners/google.png", alt: "Google" },
+  { src: "/img/partners/bowmans.png", alt: "Bowmans" },
 ];
 
 const implementingPartners: Partner[] = [
@@ -23,47 +24,30 @@ const implementingPartners: Partner[] = [
 
 const OurPartners = () => {
   return (
-    <section className="bg-white">
-      <div className="py-8 lg:py-16 mx-auto max-w-screen-xl px-4">
-        <h2 className="mb-8 lg:mb-16 text-3xl font-bold tracking-tight leading-tight text-center text-gray-900 md:text-4xl">
-          Our Partners
+    <Container>
+      <section className="py-16">
+
+     
+      <div className="flex justify-center items-center my-12">
+        <h2 className=" font-sans text-3xl font-bold tracking-tight text-slate-600 sm:text-4xl sm:leading-none">
+          Funding Partners
         </h2>
-        <div className="my-16">
-          <h2 className="my-12 text-2xl text-center lg:text-3xl tracking-tight font-extrabold text-gray-600 underline">
-            Funding Partners
-          </h2>
-          <div className="grid grid-cols-2 gap-8  text-gray-500  md:grid-cols-3 lg:grid-cols-6">
-            {fundingPartners.map((partner, index) => (
-              <Image
-                key={index}
-                src={partner.src}
-                width={150}
-                height={70}
-                alt={partner.alt}
-                className="grayscale hover:grayscale-0"
-              />
-            ))}
-          </div>
-        </div>
-        <div className="my-16">
-          <h2 className="my-12 text-2xl text-center lg:text-3xl tracking-tight font-extrabold text-gray-600 underline">
-            Implementing Partners
-          </h2>
-          <div className="grid grid-cols-2 gap-8  text-gray-500  md:grid-cols-3 lg:grid-cols-4">
-            {implementingPartners.map((partner, index) => (
-              <Image
-                key={index}
-                src={partner.src}
-                width={150}
-                height={70}
-                alt={partner.alt}
-                className="grayscale hover:grayscale-0"
-              />
-            ))}
-          </div>
-        </div>
       </div>
-    </section>
+
+      <div className="grid grid-cols-2 gap-8  text-gray-500  md:grid-cols-3 lg:grid-cols-6">
+        {fundingPartners.map((partner, index) => (
+          <Image
+            key={index}
+            src={partner.src}
+            width={150}
+            height={70}
+            alt={partner.alt}
+            className=""
+          />
+        ))}
+      </div>
+      </section>
+    </Container>
   );
 };
 

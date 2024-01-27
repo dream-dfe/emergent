@@ -11,18 +11,24 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-40 bg-white grid grid-cols-2  lg:grid-cols-3 p-8 items-center">
       {/* Left Area  */}
-      <div className="flex items-center gap-x-8  ">
+      <div className="flex items-center  ">
         <Link href={`/`} className="p-2 ">
           <Image src={`/img/emergent-logob.png`} width={50} height={50} alt="logo" />
         </Link>
       </div>
-      <div className="hidden lg:flex  items-center space-x-20">
-        <Link href="/" className="font-semibold text-lg text-slate-600">
+      <div className="hidden lg:flex  items-center space-x-4">
+        <Link href="/" className="font-semibold  text-slate-600">
           Home
         </Link>
         <HeaderPopOver />
-        <Link href="/about" className="font-semibold text-lg text-slate-600">
-          About
+        <Link href="/community" className="font-semibold  whitespace-nowrap text-slate-600">
+          Our Community
+        </Link>
+        <Link href="/resources" className="font-semibold whitespace-nowrap text-slate-600">
+          Our Resources
+        </Link>
+        <Link href="/contact" className="font-semibold whitespace-nowrap text-slate-600">
+          Contact Us
         </Link>
       </div>
 

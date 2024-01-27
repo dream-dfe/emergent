@@ -1,7 +1,7 @@
 
-import Link from "next/link";
+
 import Image from "next/image";
-import { headerLinks } from "@/lib/links";
+
 
 const Year = new Date().getFullYear();
 const Footer = () => {
@@ -9,7 +9,7 @@ const Footer = () => {
     <div className="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
     <div className="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
       <div className="sm:col-span-2">
-      <Image src="/emergent-logob.png" width={50} height={50} alt="logo" />
+      <Image src="/img/emergent-logob.png" width={50} height={50} alt="logo" />
         <div className="mt-6 lg:max-w-sm">
           <p className="text-sm text-gray-800">
           Emergent Academy is an entrepreneurial ecosystem that supports youth

@@ -1,3 +1,4 @@
+import Achievements from "./components/Home/Achievements";
 import Hero from "./components/Home/Hero";
 import ImpactStories from "./components/Home/ImpactStories";
 import OurPartners from "./components/Home/OurPartners";
@@ -12,9 +13,10 @@ export default function Home() {
          <Hero/>
          <OurStory/>
          <ImpactStories/>
-         {/* <SocialProof/>
+         {/* <SocialProof/> */}
          <OurPartners/>
-         <CTA/> */}
+         <Achievements/>
+         <CTA/>
 
     </main>
   )
