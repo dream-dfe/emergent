@@ -17,8 +17,8 @@ const HeroSection = () => {
             through entrepreneurship and technology
           </p>
         </div>
-      </div>
-    </section>
+    </div>
+</section>
   );
 };
 

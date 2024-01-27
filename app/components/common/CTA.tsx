@@ -15,7 +15,7 @@ const CTA = () => {
         <div className="mx-auto mt-8 max-w-sm">
         <Link
           href="/"
-          className="flex relative items-center p-2 space-x-4 justify-center bg-main-red rounded-md text-white hover:bg-main-yellow "
+          className="flex relative items-center p-2 space-x-4 justify-center rounded-md border text-gray-600 border-gray-300 hover:bg-gray-100 "
         >
           <span className=" font-bold ">Sponsor</span>
           <BsPaypal size={18} />
