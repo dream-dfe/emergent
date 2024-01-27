@@ -23,7 +23,7 @@ const ImpactStories = () => {
            
               <Image
                 className="rounded-3xl shadow-2xl transition-shadow duration-300 ease-in-out"
-                src="/df3.png"
+                src="/img/df3.png"
                 width={1272}
                 height={710}
                 priority

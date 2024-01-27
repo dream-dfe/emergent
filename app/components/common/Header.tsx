@@ -13,7 +13,7 @@ const Header = () => {
       {/* Left Area  */}
       <div className="flex items-center gap-x-8  ">
         <Link href={`/`} className="p-2 ">
-          <Image src={`/emergent-logob.png`} width={50} height={50} alt="logo" />
+          <Image src={`/img/emergent-logob.png`} width={50} height={50} alt="logo" />
         </Link>
       </div>
       <div className="hidden lg:flex  items-center space-x-20">
