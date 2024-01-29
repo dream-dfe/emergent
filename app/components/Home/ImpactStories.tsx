@@ -16,7 +16,7 @@ const ImpactStories = () => {
     <>
       <div className="flex justify-center items-center my-8">
         <h2 className=" font-sans text-3xl font-bold tracking-tight text-slate-600 sm:text-4xl sm:leading-none">
-          Impact Stories
+          Our Impact
         </h2>
       </div>
       <div className=" grid grid-cols-1 md:grid-cols-3  lg:grid-cols-4  ">

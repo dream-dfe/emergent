@@ -24,7 +24,7 @@ export const headerLinks = [
   },
   {
     title: "Our Resources",
-    url: "/resources",
+    url: "/programs",
   },
 ];
 
@@ -33,18 +33,18 @@ export const ourworkLinks = [
     id: "pastwork",
     name: "Past Work",
     description: "What we did in the past",
-    href: "/pastwork",
+    href: "/programs",
   },
   {
     id: "present",
     name: "Present",
     description: "Activities you can be part of",
-    href: "/presentwork",
+    href: "/programs",
   },
   {
     id: "openwork",
     name: "Open",
     description: "What we plan to do",
-    href: "/openwork",
+    href: "/programs",
   },
 ];

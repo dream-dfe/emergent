@@ -13,7 +13,9 @@ const CTA = () => {
         </div>
 
         <div className="mx-auto mt-8 max-w-sm">
+          <Link href='https://dreamfactory.africa/partner/' target="_blank">
           <Button className="w-full"> {`"Support Our Work"`} </Button>
+          </Link>
         </div>
       </div>
     </section>
