@@ -1,7 +1,7 @@
 import React from 'react'
 import TeamMember from './TeamMember'
 import { teamMembers } from '@/lib/data'
-import Container from '../components/common/Container'
+import Container from '../../components/common/Container'
 
 const OurTeam = () => {
   return (

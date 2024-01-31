@@ -13,7 +13,7 @@ const ImpactStoryCard = ({ story }: ImpactStoryCardProps) => {
       <>
         <div className="relative max-w-md max-h-94 rounded-md overflow-hidden">
           <div className="absolute bottom-0 w-full p-3 bg-violet-600 opacity-75 text-white">
-            <p>{`"${story.testimony}"`}</p>
+            <p className="">{`"${story.testimony}"`}</p>
             <h4 className="font-semibold py-3">{story.person}</h4>
             <h4 className="text-xs">{story.org}</h4>
           </div>

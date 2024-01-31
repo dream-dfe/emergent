@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import HeaderPopOver from "./HeaderPopOver";
 import SideDrawer from "./SideDrawer";
+import OurResourcesPopOver from "./OurResourcesPopOver";
 
 
 const Header = () => {
@@ -24,9 +25,7 @@ const Header = () => {
         <Link href="/community" className="font-semibold  whitespace-nowrap text-slate-600">
           Our Community
         </Link>
-        <Link href="/resources" className="font-semibold whitespace-nowrap text-slate-600">
-          Our Resources
-        </Link>
+       <OurResourcesPopOver/>
         <Link href="/contact" className="font-semibold whitespace-nowrap text-slate-600">
           Contact Us
         </Link>

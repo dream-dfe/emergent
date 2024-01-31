@@ -1,10 +1,10 @@
-import Achievements from "./components/Home/Achievements";
-import Hero from "./components/Home/Hero";
-import ImpactStories from "./components/Home/ImpactStories";
-import OurPartners from "./components/Home/OurPartners";
-import OurStory from "./components/Home/OurStory";
-import SocialProof from "./components/Home/SocialProof";
-import CTA from "./components/common/CTA";
+import Achievements from "../components/Home/Achievements";
+import Hero from "../components/Home/Hero";
+import ImpactStories from "../components/Home/ImpactStories";
+import OurPartners from "../components/Home/OurPartners";
+import OurStory from "../components/Home/OurStory";
+import SocialProof from "../components/Home/SocialProof";
+import CTA from "../components/common/CTA";
 
 
 export default function Home() {
@@ -13,7 +13,7 @@ export default function Home() {
          <Hero/>
          <OurStory/>
          <ImpactStories/>
-         {/* <SocialProof/> */}
+         <SocialProof/>
          <OurPartners/>
          <Achievements/>
          <CTA/>

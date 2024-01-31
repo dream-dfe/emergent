@@ -1,5 +1,5 @@
-import Footer from './components/common/Footer'
-import Header from './components/common/Header'
+import Footer from '../components/common/Footer'
+import Header from '../components/common/Header'
 import './globals.css'
 import type { Metadata } from 'next'
 import {Poppins , Fira_Sans} from 'next/font/google'

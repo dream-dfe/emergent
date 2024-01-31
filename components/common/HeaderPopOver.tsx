@@ -7,8 +7,6 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
-
-import { Icon } from "./IconComponent";
 import Link from "next/link";
 import { ourworkLinks } from "@/lib/links";
 

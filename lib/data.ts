@@ -70,39 +70,93 @@ export const programsData = [
     url: 'https://talent4startups.digital-africa.co/'
     
   },
+  {
+    title: "Arise",
+    imageSrc: "/img/programs/businessacc.png",
+    descr:
+      "Participate in a research that involves female entrepreneurs who are currently running their own businesses that are located in the semi-formal or informal economies whose ages are between 21 and 50.! ",
+    status: "Open",
+    url: 'https://dreamfactory.africa/'
+    
+  },
 ];
 
 export const ImpactStoriesData = [
   {
     id: "1",
     img: "/img/stories/testifier1.png",
-    person: "Kebo Rorisang",
-    org: "Good Vibes Clothing",
+    person: "Zandile",
+    org: "Mam Mehlo's Beauty Studio ",
     testimony:
-      "Emergent Academy has been such a great place for me. I always had a dream that I wished one day it would become true, then I met the Emergent Academy  ",
+      "I have come to understand that business is more than the service I render. My eyes were opened after joining Dream Factory. I cannot thank this vision enough for it has opened my eyes. ",
   },
   {
     id: "2",
     img: "/img/stories/testifier2.png",
-    person: "Miranda Melvin",
-    org: "Hook & Dry Bevs",
+    person: "Nafeesah 	Dante",
+    org: "Bo-kaap's Finest ",
     testimony:
-      "Emergent Academy has been such a great place for me.I always had a dream that I wished one day it would become true, then I met the Emergent Academy  ",
+      "I started a business with little to no knowledge.  The emergent program is 1 of the best choices i have made. Implementing the trainings and feedback put my business on another level.  ",
   },
   {
     id: "3",
     img: "/img/stories/testifier3.png",
-    person: "Melissa August",
-    org: "Cape Cycles",
+    person: "Natasha 	Lekker ",
+    org: "Aleluta",
     testimony:
-      "Emergent Academy has been such a great place for me. I always had a dream that I wished one day it would become true, then I met the Emergent Academy ",
+      "I based the operation of the business on Meer passing and perseverance and not the operation side and compliance. In terms of accounting, structure and marketing.   ",
   },
   {
     id: "4",
     img: "/img/stories/testifier4.png",
-    person: "Themebeka Mawande",
-    org: "Gugulethu Meats",
+    person: "Charnee	Swartz ",
+    org: "Akurah Group ",
     testimony:
-      "Emergent Academy has been such a great place for me.I always had a dream that I wished one day it would become true, then I met the Emergent Academy ",
+      "I learnt a lot to take my business forward from doing everything to breaking down how my business will grow by implementing systems and managing / working is totally different ",
   },
 ];
+
+
+export const LecturesList = [
+  {
+    id: 1,
+    title: "Topic 1",
+    img: '/img/lorian.png',
+    module: 1,
+    lecture: "My Purpose",
+    url: "https://www.youtube.com/watch?v=Fl48mJhq9Ns&t=439s&ab_channel=DreamFactoryFoundation",
+    slug: "my-purpose-topic-1",
+    facilitator: "Lorian"
+  },
+  {
+    id: 2,
+    title: "Topic 2",
+    img: '/img/lorian.png',
+    module: 1,
+    lecture: "My Purpose",
+    url: "https://www.youtube.com/watch?v=Fl48mJhq9Ns&t=439s&ab_channel=DreamFactoryFoundation",
+    slug: "my-purpose-topic-2",
+    facilitator: "Lorian"
+  },
+  {
+    id: 3,
+    title: "Topic 3",
+    img: '/img/lorian.png',
+    module: 1,
+    lecture: "My Purpose",
+    url: "https://www.youtube.com/watch?v=Fl48mJhq9Ns&t=439s&ab_channel=DreamFactoryFoundation",
+    slug: "my-purpose-topic-3",
+    facilitator: "Lorian"
+  },
+  {
+    id: 4,
+    title: "Topic 4",
+    img: '/img/lorian.png',
+    module: 1,
+    lecture: "My Purpose",
+    url: "https://www.youtube.com/watch?v=Fl48mJhq9Ns&t=439s&ab_channel=DreamFactoryFoundation",
+    slug: "my-purpose-topic-4",
+    facilitator: "Lorian"
+
+  }
+]

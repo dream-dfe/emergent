@@ -9,6 +9,7 @@ import { TiThMenu } from "react-icons/ti";
 import Image from "next/image";
 import Link from "next/link";
 import HeaderPopOver from "./HeaderPopOver";
+import OurResourcesPopOver from "./OurResourcesPopOver";
 
 const SideDrawer = () => {
   return (
@@ -27,6 +28,7 @@ const SideDrawer = () => {
             Home
           </Link>
           <HeaderPopOver />
+          <OurResourcesPopOver/>
           <Link href="/about" className="font-semibold text-lg text-slate-600">
             About
           </Link>

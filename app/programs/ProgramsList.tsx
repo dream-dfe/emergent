@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import React from "react";
-import Container from "../components/common/Container";
+import Container from "../../components/common/Container";
 import { programsData } from "@/lib/data";
 import { BsFillCheckCircleFill } from "react-icons/bs";
 import { GoDotFill } from "react-icons/go";
