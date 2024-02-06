@@ -36,15 +36,8 @@ export const teamMembers = [
   },
 ];
 
-export const programsData = [
-  {
-    title: "Emergent Women Program",
-    imageSrc: "/img/programs/tech.png",
-    descr:
-      "Our Emergent Women Program equips young individuals, primarily women aged 18-25, with essential skills in entrepreneurship, personal development, and digital literacy. Participants engage in both in-person and online classes to acquire these competencies.",
-      status: "Past",
-      url: 'https://dreamfactory.africa/'
-  },
+export const ActiveProgramsData = [
+  
   {
     title: "Emergent Business Accelerator Program",
     imageSrc: "/img/programs/businessacc.png",
@@ -55,15 +48,22 @@ export const programsData = [
   },
   {
     title: "DoDigi Program",
-    imageSrc: "/img/programs/dodigipart.png",
+    imageSrc: "/img/programs/wwd2.jpg",
     descr:
       "DoDigi is a digital solution for SMMEs in low income communities. It is an online project that enables women-led SMMEs in low income communities to learn how to, and to open digital channels for their businesses. ",
       status: "Current",
       url: 'https://dodigi.africa/'
   },
+ 
+];
+
+
+export const OpenProgramsData = [
+  
+ 
   {
     title: "Talent4Startups",
-    imageSrc: "/img/programs/business.png",
+    imageSrc: "/img/programs/wwd4.jpg",
     descr:
       "Are you looking for a training in tech and digital jobs? Join the community of 300 alumni already trained by the program and launch your tech career! ",
     status: "Open",
@@ -72,7 +72,7 @@ export const programsData = [
   },
   {
     title: "Arise",
-    imageSrc: "/img/programs/businessacc.png",
+    imageSrc: "/img/programs/wwd3.png",
     descr:
       "Participate in a research that involves female entrepreneurs who are currently running their own businesses that are located in the semi-formal or informal economies whose ages are between 21 and 50.! ",
     status: "Open",
@@ -81,6 +81,8 @@ export const programsData = [
   },
 ];
 
+
+
 export const ImpactStoriesData = [
   {
     id: "1",
@@ -88,7 +90,7 @@ export const ImpactStoriesData = [
     person: "Zandile",
     org: "Mam Mehlo's Beauty Studio ",
     testimony:
-      "I have come to understand that business is more than the service I render. My eyes were opened after joining Dream Factory. I cannot thank this vision enough for it has opened my eyes. ",
+      "I have come to understand that business is more than the service I render. My eyes were opened after joining Dream Factory. I cannot thank this vision enough for it has opened my eyes.",
   },
   {
     id: "2",
@@ -96,7 +98,7 @@ export const ImpactStoriesData = [
     person: "Nafeesah 	Dante",
     org: "Bo-kaap's Finest ",
     testimony:
-      "I started a business with little to no knowledge.  The emergent program is 1 of the best choices i have made. Implementing the trainings and feedback put my business on another level.  ",
+      "I started a business with little to no knowledge.  The emergent program is one of the best choices I have made. Implementing the trainings and feedback put my business on another level.",
   },
   {
     id: "3",
@@ -104,7 +106,7 @@ export const ImpactStoriesData = [
     person: "Natasha 	Lekker ",
     org: "Aleluta",
     testimony:
-      "I based the operation of the business on Meer passing and perseverance and not the operation side and compliance. In terms of accounting, structure and marketing.   ",
+      "I based the operation of the business on mere passion and perseverance and not the operation side and compliance. I now apply accounting, structure and marketing in my business.",
   },
   {
     id: "4",

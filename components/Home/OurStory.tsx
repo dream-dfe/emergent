@@ -30,13 +30,13 @@ const OurStory = () => {
           Emergent Academy is an entrepreneurial ecosystem that supports youth
           entrepreneurs to conceptualize, build and scale sustainable businesses.
         </p>
-        <p className="text-base text-gray-700 md:text-lg sm:px-4">
+        {/* <p className="text-base text-gray-700 md:text-lg sm:px-4">
           Emergent Academy serves as a dynamic technology hub dedicated to
           uplifting and economically empowering disadvantaged youth and learners
           residing in low-income communities. With a track record spanning over
           five years, our academy has continually offered a range of impactful
           programs.
-        </p>
+        </p> */}
         <hr className="w-full my-8 border-gray-300" />
       </div>
     </div>

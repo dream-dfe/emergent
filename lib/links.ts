@@ -30,21 +30,21 @@ export const headerLinks = [
 
 export const ourworkLinks = [
   {
-    id: "pastwork",
-    name: "Past Work",
+    id: "pastprogs",
+    name: "Past Programmes",
     description: "What we did in the past",
-    href: "/programs",
+    href: "/past-programmes",
   },
   {
-    id: "present",
-    name: "Present",
+    id: "activeprogs",
+    name: "Active Programmes",
     description: "Activities you can be part of",
-    href: "/programs",
+    href: "/active-programmes",
   },
   {
-    id: "openwork",
-    name: "Open",
+    id: "openprogs",
+    name: "Open Programmes",
     description: "What we plan to do",
-    href: "/programs",
+    href: "/open-programmes",
   },
 ];

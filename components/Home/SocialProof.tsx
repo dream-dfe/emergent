@@ -1,5 +1,3 @@
-
-
 const SocialProof = () => {
   return (
     <section className="bg-white ">
@@ -7,33 +5,42 @@ const SocialProof = () => {
         <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
           <div>
             <div className="flex flex-col items-center justify-center">
-              <dt className="mb-2 text-3xl md:text-4xl text-slate-600 font-bold">120+</dt>
+              <dt className="mb-2 text-3xl md:text-4xl  text-slate-600 font-bold">
+                678
+              </dt>
               <dd className="font-light ">
-                young women trained every year
+                total youth businesses supported since 2018
               </dd>
             </div>
           </div>
+
           <div>
             <div className="flex flex-col items-center justify-center">
-              <dt className="mb-2 text-3xl md:text-4xl  text-slate-600 font-bold">40+</dt>
+              <dt className="mb-2 text-3xl md:text-4xl  text-slate-600 font-bold">
+                80%
+              </dt>
+              <dd className="font-light ">survival rate</dd>
+            </div>
+          </div>
+
+          <div>
+            <div className="flex flex-col items-center justify-center">
+              <dt className="mb-2 text-3xl md:text-4xl  text-slate-600 font-bold">
+                40+
+              </dt>
               <dd className="font-light ">
-                startups enrolled in the business accelerator 
+                businesses enrolled in the Business Accelerator Program annually
               </dd>
             </div>
           </div>
+
           <div>
             <div className="flex flex-col items-center justify-center">
-              <dt className="mb-2 text-3xl md:text-4xl  text-slate-600 font-bold">1200+</dt>
+              <dt className="mb-2 text-3xl md:text-4xl text-slate-600 font-bold">
+                3000
+              </dt>
               <dd className="font-light ">
-                Dodigi entrepreneurs supported 
-              </dd>
-            </div>
-          </div>
-          <div>
-            <div className="flex flex-col items-center justify-center">
-              <dt className="mb-2 text-3xl md:text-4xl  text-slate-600 font-bold">678+</dt>
-              <dd className="font-light ">
-              Total youth businesses supported since 2018
+                businesses trained on digital marketing
               </dd>
             </div>
           </div>

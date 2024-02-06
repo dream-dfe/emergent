@@ -3,7 +3,7 @@
 import Image from "next/image";
 import React from "react";
 import Container from "../../components/common/Container";
-import { programsData } from "@/lib/data";
+import { ActiveProgramsData } from "@/lib/data";
 import { BsFillCheckCircleFill } from "react-icons/bs";
 import { GoDotFill } from "react-icons/go";
 import { Button } from "@/components/ui/button";
@@ -25,7 +25,7 @@ const ProgramsList = () => {
           programs
         </p>
       </div>
-      {programsData.map((program) => (
+      {ActiveProgramsData.map((program) => (
         <section
           className="grid grid-cols-1 md:grid-cols-2  gap-4 py-4"
           key={program.title}
@@ -46,7 +46,7 @@ const ProgramsList = () => {
             <p className="text-gray-500">{program.descr}</p>
             <p className="my-4">
               {" "}
-              Application Status:{" "}
+              Programme Status:{" "}
               <span className=" text-gray-900 font-semibold">
                 {" "}
                 {program.status}

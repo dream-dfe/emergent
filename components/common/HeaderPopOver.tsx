@@ -14,7 +14,7 @@ import { ourworkLinks } from "@/lib/links";
 
 export default function HeaderPopOver() {
   return (
-    <NavigationMenu>
+    <NavigationMenu className=" z-50">
       <NavigationMenuList>
         <NavigationMenuItem>
           <NavigationMenuTrigger className="font-semibold text-base text-slate-600">

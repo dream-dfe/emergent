@@ -11,7 +11,7 @@ import Link from "next/link";
 
 const OurResourcesPopOver = () => {
   return (
-    <NavigationMenu>
+    <NavigationMenu className="">
       <NavigationMenuList>
         <NavigationMenuItem>
           <NavigationMenuTrigger className="font-semibold text-base text-slate-600">
