@@ -104,7 +104,7 @@ const Footer = () => {
       </p>
       <Link
             href="https://github.com/de-mawo"
-            className="text-violet-950 transition-colors duration-300 hover:text-deep-purple-accent-400"
+            className="text-sm text-violet-950 transition-colors duration-300 hover:text-deep-purple-accent-400"
             target="_blank"
 
           >

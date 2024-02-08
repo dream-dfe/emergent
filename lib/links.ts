@@ -1,8 +1,4 @@
-import { BsHddNetwork } from "react-icons/bs";
-import { IoLogoGoogle } from "react-icons/io5";
-import { SiGoogleclassroom } from "react-icons/si";
-import { VscOrganization } from "react-icons/vsc";
-import { BiCodeCurly } from "react-icons/bi";
+
 
 export const headerLinks = [
   {
@@ -30,10 +26,10 @@ export const headerLinks = [
 
 export const ourworkLinks = [
   {
-    id: "pastprogs",
-    name: "Past Programmes",
-    description: "What we did in the past",
-    href: "/past-programmes",
+    id: "openprogs",
+    name: "Open Applications",
+    description: "Apply now for these programes",
+    href: "/open-applications",
   },
   {
     id: "activeprogs",
@@ -42,9 +38,11 @@ export const ourworkLinks = [
     href: "/active-programmes",
   },
   {
-    id: "openprogs",
-    name: "Open Programmes",
-    description: "What we plan to do",
-    href: "/open-programmes",
+    id: "pastprogs",
+    name: "Past Programmes",
+    description: "What we did in the past",
+    href: "/past-programmes",
   },
+ 
+ 
 ];

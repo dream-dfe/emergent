@@ -20,16 +20,16 @@ const OurResourcesPopOver = () => {
           <NavigationMenuContent>
             <div className="flex flex-col w-[200px] space-y-4 p-4  ">
               <Link
-                href="/lectures"
+                href="/voices"
                 className="-m-3 flex items-center rounded-lg p-2  hover:bg-violet-100 focus:outline-none "
               >
-                Lectures
+               Emergent Voices
               </Link>
               <Link
-                href="/lectures"
+                href="/courses"
                 className="-m-3 flex items-center rounded-lg p-2  hover:bg-violet-100 focus:outline-none "
               >
-                Courses
+                Emergent Courses
               </Link>
             </div>
           </NavigationMenuContent>
