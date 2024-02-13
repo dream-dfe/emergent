@@ -7,7 +7,7 @@ import Container from "@/components/common/Container";
 const EmergentVoices = () => {
   return (
     <>
-      <section className="pt-24 bg-white">
+      {/* <section className="pt-24 bg-white">
         <div className="px-12 mx-auto max-w-7xl">
           <div className="w-full mx-auto text-center  md:w-11/12 xl:w-9/12 ">
             <h1 className="mb-8 text-2xl inline-flex items-center font-extrabold leading-none tracking-normal text-slate-800 md:text-6xl md:tracking-tight">
@@ -32,7 +32,13 @@ const EmergentVoices = () => {
             ))}
           </div>
         </div>
-      </Container>
+      </Container> */}
+       <div className="text-center py-12 bg-yellow-400">
+    <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-white ">
+     Emergent Voices Page
+    </h2>
+    <p className="mb-4 text-xl  font-extrabold  ">Work in progress ⚒</p>
+  </div>
     </>
   );
 };
