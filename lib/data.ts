@@ -97,7 +97,7 @@ export const ProgramsData = [
 export const ImpactStoriesData = [
   {
     id: "1",
-    img: "/img/stories/testifier1.png",
+    img: "/img/stories/zandile.png",
     person: "Zandile",
     org: "Mam Mehlo's Beauty Studio ",
     testimony:
@@ -105,7 +105,7 @@ export const ImpactStoriesData = [
   },
   {
     id: "2",
-    img: "/img/stories/testifier2.png",
+    img: "/img/stories/nafeesah.png",
     person: "Nafeesah 	Dante",
     org: "Bo-kaap's Finest ",
     testimony:
@@ -113,7 +113,7 @@ export const ImpactStoriesData = [
   },
   {
     id: "3",
-    img: "/img/stories/testifier3.png",
+    img: "/img/stories/natasha.png",
     person: "Natasha 	Lekker ",
     org: "Aleluta",
     testimony:
@@ -121,7 +121,7 @@ export const ImpactStoriesData = [
   },
   {
     id: "4",
-    img: "/img/stories/testifier4.png",
+    img: "/img/stories/charne.png",
     person: "Charnee	Swartz ",
     org: "Akurah Group ",
     testimony:
