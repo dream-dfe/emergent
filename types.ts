@@ -1,13 +1,15 @@
-export type lectureType = {
-    id: number;
+export type VoiceType = {
+    id: string;
     title: string;
     img: string
-    module: number;
-    lecture: string;
-    url: string;
+    event: string;
+    date: string;
+    videoId: string;
     slug: string
     facilitator: string
 }
+
+
 
 
 export type ProgramDataType =  {

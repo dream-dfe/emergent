@@ -1,14 +1,15 @@
 
-import { LecturesList } from "@/lib/data";
-import { lectureType } from "@/types";
-import LectureCard from "./VoicesCard";
+
+import { VoiceType } from "@/types";
+import VoiceCard from "./VoicesCard";
 import Container from "@/components/common/Container";
+import { VoicesList } from "@/lib/data";
 
 const EmergentVoices = () => {
   return (
     <>
-      {/* <section className="pt-24 bg-white">
-        <div className="px-12 mx-auto max-w-7xl">
+      <section className="pt-24 bg-white">
+        <div className="px-12 mx-auto ">
           <div className="w-full mx-auto text-center  md:w-11/12 xl:w-9/12 ">
             <h1 className="mb-8 text-2xl inline-flex items-center font-extrabold leading-none tracking-normal text-slate-800 md:text-6xl md:tracking-tight">
               <span>Emergent </span>{" "}
@@ -18,27 +19,24 @@ const EmergentVoices = () => {
               </span>
             </h1>
             <p className="px-0 mb-8 text-lg text-slate-600 md:text-xl lg:px-24">
-              We invite you to take time to watch these lecture and be inspired
-              to align yourself to be on the right path in Life.
+            At Dream Factory we are determined to make entrepreneurship a viable pathway for youth and women in low-income communities. Together with passionate business leaders through mentorship and the power of personal testimony we share practical lessons, context appropriate and practice-based knowledge to accelerate the Emerging businesses in our community. 
             </p>
+            <p className="px-0 mb-8 text-lg text-slate-600 md:text-xl lg:px-24">
+            What often stands between those who are successful and those who have not yet obtained notable success - is knowledge. How can you know if you haven&apos;t been told? Emergent Voices is about building a knowledge sharing community that is changing the narrative of disempowered communities.
+               </p>
           </div>
         </div>
       </section>
       <Container>
         <div className="my-24 space-y-5">
-          <div className=" grid grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-3  ">
-            {LecturesList.map((lecture) => (
-              <LectureCard key={lecture.id} lecture={lecture as lectureType} />
+          <div className=" grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3  ">
+            {VoicesList.map((voice) => (
+              <VoiceCard key={voice.id} voice={voice as VoiceType} />
             ))}
           </div>
         </div>
-      </Container> */}
-       <div className="text-center py-12 bg-yellow-400">
-    <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-white ">
-     Emergent Voices Page
-    </h2>
-    <p className="mb-4 text-xl  font-extrabold  ">Work in progress ⚒</p>
-  </div>
+      </Container>
+     
     </>
   );
 };

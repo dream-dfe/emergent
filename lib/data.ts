@@ -129,55 +129,56 @@ export const ImpactStoriesData = [
   },
 ];
 
-export const LecturesList = [
+export const VoicesList = [
   {
-    id: 1,
-    title: "Topic 1",
-    img: "/img/lorian.png",
-    module: 1,
-    lecture: "My Purpose",
-    url: "https://www.youtube.com/watch?v=Fl48mJhq9Ns&t=439s&ab_channel=DreamFactoryFoundation",
-    slug: "my-purpose-topic-1",
-    facilitator: "Lorian",
+    id: "95ba6df2-788c-4ab9-b794-3fea254a2cf1",
+    title: "Financial Models",
+    img: "/img/voices/mpo.jpg",
+    event: "DoDigi Program",
+    date: " ",
+    videoId: "tm_BuvlPz_E",
+    slug: "financial-models-mpo",
+    facilitator: "Mpodumo Doubada",
   },
   {
-    id: 2,
-    title: "Topic 2",
-    img: "/img/lorian.png",
-    module: 1,
-    lecture: "My Purpose",
-    url: "https://www.youtube.com/watch?v=Fl48mJhq9Ns&t=439s&ab_channel=DreamFactoryFoundation",
-    slug: "my-purpose-topic-2",
-    facilitator: "Lorian",
+    id: "24036840-3fa3-4b1d-9330-42dd10b4f58f",
+    title: "Raising Capital",
+    img: "/img/voices/fred.jpg",
+    event: "DoDigi Program",
+    date: " ",
+    videoId: "oy7Mgmn0Ddg",
+    slug: "raising-capital-fred",
+    facilitator: "Fred Maunze",
   },
   {
-    id: 3,
-    title: "Topic 3",
-    img: "/img/lorian.png",
-    module: 1,
-    lecture: "My Purpose",
-    url: "https://www.youtube.com/watch?v=Fl48mJhq9Ns&t=439s&ab_channel=DreamFactoryFoundation",
-    slug: "my-purpose-topic-3",
-    facilitator: "Lorian",
+    id: "b36df210-b7ed-4994-8dff-248b04f90a5f",
+    title: "Building a Personal & Business Brand",
+    img: "/img/voices/zuki.jpg",
+    event: "DoDigi Program",
+    date: " ",
+    videoId: "_XQ2Rgtnq6U",
+    slug: "building-brand-zuki",
+    facilitator: "Zukiswa Mqolomba",
   },
   {
-    id: 4,
-    title: "Topic 4",
-    img: "/img/lorian.png",
-    module: 1,
-    lecture: "My Purpose",
-    url: "https://www.youtube.com/watch?v=Fl48mJhq9Ns&t=439s&ab_channel=DreamFactoryFoundation",
-    slug: "my-purpose-topic-4",
-    facilitator: "Lorian",
+    id: "cfdcf26e-e590-4c30-add4-874b9a0e3791",
+    title: "Launching Branding",
+    img: "/img/voices/tumi.jpg",
+    event: "DoDigi Program",
+    date: " ",
+    videoId: "NK5lVUjHR-c",
+    slug: "launching-branding-tumi",
+    facilitator: "Tumi Morule",
   },
+  
 ];
 
 //
 //
-// 95ba6df2-788c-4ab9-b794-3fea254a2cf1
-// 24036840-3fa3-4b1d-9330-42dd10b4f58f
-// b36df210-b7ed-4994-8dff-248b04f90a5f
-// cfdcf26e-e590-4c30-add4-874b9a0e3791
+// 
+// 
+// 
+// 
 // 262c1d1c-03da-4f58-a3ba-2ecec0cda99a
 // 27c32932-7d56-4743-8be5-ae128e4665eb
 // 97dc96d1-edac-42b5-908e-39a921f601fd
