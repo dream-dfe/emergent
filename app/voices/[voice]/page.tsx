@@ -20,15 +20,15 @@ export default async function VoicePage({
   return (
     <Container>
       {filteredVoices.map((voice) => (
-        <>
-          <div className="flex flex-col p-4" key={voice.id}>
+        <div key={voice.id}>
+          <div className="flex flex-col p-4" >
             <p className=" font-semibold">Title: {voice.title}</p>
             <p className=" font-semibold">Speaker: {voice.facilitator}</p>
             <p className=" font-semibold">Event: {voice.event}</p>
             <p className=" font-semibold">Date: {voice.date}</p>
           </div>
           <YoutubeVid videoId={voice.videoId} />
-        </>
+        </div>
       ))}
     </Container>
   );

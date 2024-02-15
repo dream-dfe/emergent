@@ -11,13 +11,13 @@ type VoiceCardProps = {
 const VoiceCard = ({ voice }: VoiceCardProps) => {
   return (
     <div className="relative p-3 group shadow-md rounded-md">
-      <div className="max-h-60  rounded-md  overflow-hidden relative">
+      <div className=" rounded-md  overflow-hidden relative">
         <Image
           src={voice.img}
           alt={""}
           width={8250}
           height={4250}
-          className=" w-full object-cover transition-all hover:scale-105 aspect-square"
+          className=" w-full h-full object-contain transition-all hover:scale-105 "
         />
         <div className="hidden absolute inset-0 items-center justify-center bg-slate-200 bg-opacity-75 hover:bg-opacity-50 transition-all group-hover:flex">
           <Link
@@ -30,8 +30,8 @@ const VoiceCard = ({ voice }: VoiceCardProps) => {
       </div>
      
       
-      <div className="flex flex-col items-start justify-start">
-      <p className=" text-xl tracking-tight font-extrabold">{voice.title}</p>
+      <div className="flex flex-col items-start justify-start text-slate-600">
+      <p className=" text-xl tracking-tight font-extrabold ">{voice.title}</p>
       <p className=" font-semibold">{voice.facilitator}</p>
   </div>
     </div>
