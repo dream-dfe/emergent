@@ -51,6 +51,16 @@ const SocialProof = () => {
               </dd>
             </div>
           </div>
+          <div>
+            <div className="flex flex-col items-center justify-center">
+              <dt className="mb-2 text-3xl md:text-4xl text-slate-600 font-bold">
+              R4 999 336
+              </dt>
+              <dd className="font-light ">
+              Total portfolio revenue (2023 financial year)
+              </dd>
+            </div>
+          </div>
         </div>
       </div>
     </section>
