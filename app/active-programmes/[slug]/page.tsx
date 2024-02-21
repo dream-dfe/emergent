@@ -39,7 +39,7 @@ export default async function ActiveProgramPage({
           </div>
           <ul className="flex  flex-col space-y-3 my-8 list-disc">
             {
-              attributes.map((att, i) => (
+              attributes?.map((att, i) => (
                 <li key={i}>{att}</li>
               ))
             }

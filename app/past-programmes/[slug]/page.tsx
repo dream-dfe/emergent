@@ -38,7 +38,7 @@ export default async function PastProgramPage({
             </div>
             <ul className="flex  flex-col space-y-4 list-disc">
               {
-                attributes.map((att, i) => (
+                attributes?.map((att, i) => (
                   <li key={i}>{att}</li>
                 ))
               }
