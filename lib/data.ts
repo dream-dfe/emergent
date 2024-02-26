@@ -53,16 +53,23 @@ export const ProgramsData = [
   },
   {
     id: "89c27fc7-c92f-44aa-ab5e-38a1133e8423",
-    title: "Emergent Business Accelerator Program",
+    title: "EDT Emergent Business Accelerator Program",
     imageSrc: "/img/programs/wwd3.png",
     descr:
-      " Women-led Business to Scale: Closing the financial and digital access gap for the scale of WSMEs in low-inco​​me communities. Making entrepreneurship a viable economic pathway for women. ",
+      " Bespoke entrepreneurial support for small and medium businesses with a strong focus on female entrepreneurs in low-income communities. ",
     status: "Past",
     pathUrl: "/past-programmes",
     slug: "emergent-business-accelerator",
     website: "https://dreamfactory.africa/",
     btnTitle: "Learn More",
-    longDescr: [" ", " ", " "],
+    longDescr: [
+      " ", 
+    " ",
+     " ",
+     " ",
+     " ",
+     " ",
+  ],
     attributes: [" ", " ", " "],
   },
   {

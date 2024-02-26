@@ -28,7 +28,7 @@ export const ourworkLinks = [
   {
     id: "openprogs",
     name: "Open Applications",
-    description: "Apply now for these programes",
+    description: "Apply now for these programmes",
     href: "/open-applications",
   },
   {
