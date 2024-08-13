@@ -13,7 +13,6 @@ export async function POST(req: NextRequest) {
   try {
     const body: SubmittedCourse = await req.json();
 
-    console.log(body);
 
     const { fname, lname, email, message, phone } = body;
 
