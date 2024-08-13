@@ -14,7 +14,7 @@ const Header = () => {
       {/* Left Area  */}
       <div className="flex items-center  ">
         <Link href={`/`} className="p-2 flex flex-col items-center">
-          <Image src={`/img/dflogo.png`} width={50} height={50} alt="logo" />
+          <Image src='/img/dflogo.png' width={50} height={50} alt="logo" />
           <h4 className="text-xs font-semibold text-violet-900">Emergent Academy</h4>
         </Link>
       </div>
@@ -23,6 +23,9 @@ const Header = () => {
           Home
         </Link>
         <HeaderPopOver />
+        <Link href="/wit" className="font-semibold whitespace-nowrap text-slate-600">
+         WiT
+        </Link>
         <Link href="/community" className="font-semibold  whitespace-nowrap text-slate-600">
           Our Community
         </Link>
