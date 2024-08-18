@@ -56,7 +56,7 @@ const ContactForm = () => {
       });
 
       if (res.status == 200) {
-        toast.success("Course Added", { duration: 4000 });
+        toast.success("Form Data Submitted", { duration: 4000 });
         form.reset();
         router.refresh();
       } else {

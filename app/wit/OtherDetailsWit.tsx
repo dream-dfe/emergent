@@ -45,7 +45,7 @@ export default function OtherDetailsWit() {
           mindset; a demonstrated interest to innovate and use technology as a
           tool for scale and sustainability; with a track record that shows a
           commitment to their businesses and a vision that advances female
-          entrepreneurship in Botswana.:
+          entrepreneurship in Botswana.
         </p>
         <h2 className="my-4 text-xl">Eligibility criteria:</h2>
         <ul className="list-disc space-y-2 px-4 text-justify">

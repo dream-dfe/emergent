@@ -30,26 +30,26 @@ const Footer = () => {
         <div className="flex">
           <p className="mr-1 text-gray-800">Phone:</p>
           <a
-            href="tel:27677867838"
+            href="tel:26772674075"
             aria-label="Our phone"
             title="Our phone"
             className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
           >
-           +27 67 786 7838
+           +267 72 674 075/71 387 160
           </a>
         </div>
         <div className="flex">
           <p className="mr-1 text-gray-800">Email:</p>
           <a
-            href="mailto:info@lorem.mail"
+            href="mailto:bots@dreamfactoryfoundation.org"
             aria-label="Our email"
             title="Our email"
             className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
           >
-            dreams@factoryfoundation.org
+            bots@dreamfactoryfoundation.org
           </a>
         </div>
-        <div className="flex">
+        {/* <div className="flex">
           <p className="mr-1 text-gray-800">Address:</p>
           <a
             href="http://www.dreamfactoryfoundation.org/"
@@ -61,7 +61,7 @@ const Footer = () => {
           >
             370B Main Rd, Observatory, Cape Town, 7925
           </a>
-        </div>
+        </div> */}
       </div>
       <div>
         <span className="text-base font-bold tracking-wide text-gray-900">
