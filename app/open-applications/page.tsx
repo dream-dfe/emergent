@@ -11,7 +11,7 @@ export default async function OpenApplicationsPage() {
     <>
     <div className="text-center py-12 bg-violet-600">
       <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-white ">
-        Open Programmes
+        Open Applications
       </h2>
     </div>
 

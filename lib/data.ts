@@ -53,12 +53,12 @@ export const ProgramsData = [
   },
   {
     id: "89c27fc7-c92f-44aa-ab5e-38a1133e8423",
-    title: "EDT Emergent Business Accelerator Program",
+    title: "Emergent Business Accelerator Program",
     imageSrc: "/img/programs/wwd3.png",
     descr:
       " Bespoke entrepreneurial support for small and medium businesses with a strong focus on female entrepreneurs in low-income communities. ",
-    status: "Past",
-    pathUrl: "/past-programmes",
+    status: "Active",
+    pathUrl: "/active-programmes",
     slug: "emergent-business-accelerator",
     website: "https://dreamfactory.africa/",
     btnTitle: "Learn More",
@@ -100,8 +100,8 @@ export const ProgramsData = [
     imageSrc: "/img/programs/talent4.jpg",
     descr:
       "A program in partnership with the consortium led by the African Technology Innovation Hubs Initiative (AfriLabs) this program combats both youth unemployment in Africa and the digital skills gap in African startups which is essential for their growth and scale.  ",
-    status: "Open",
-    pathUrl: "/open-applications",
+    status: "Active",
+    pathUrl: "/active-programmes",
     slug: "talent4startups",
     website: "https://talent4startups.digital-africa.co/",
     btnTitle: "Learn More",
