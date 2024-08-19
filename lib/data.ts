@@ -41,15 +41,18 @@ export const ProgramsData = [
     id: "20b031ea-5d59-42c2-9eda-f070437231e5",
     title: "Emergent Women Programme",
     imageSrc: "/img/programs/wwd2.jpg",
-    descr:
-      " Our Emergent Women Program equips young individuals, primarily  women aged 18-25, with essential skills in entrepreneurship, personal development, and digital literacy. Participants engage in both in-person and online classes to acquire these competencies. ",
+    descr: "Trains unemployed women to develop businesses at ideation stage.",
     status: "Active",
     pathUrl: "/active-programmes",
     slug: "emergent-women",
     website: "https://dreamfactory.africa/",
     btnTitle: "Learn More",
-    longDescr: [" ", " ", " "],
-    attributes: [" ", " ", " "],
+    longDescr: [
+      "This is a 12-month skills development learnership that empowers unemployed youth, particularly young women. The academy covers courses that focus on entrepreneurship and business development, digital technologies; as well as personal and professional mastery skills in a manner that enables them to transition successfully into adulthood and participate actively in the economy instead of being a social burden. The academy also offers participants first-hand job experience through partnerships. We therefore balance skills development with actual job experience, whilst empowering participants with the possibilities of creating their own viable entrepreneurial initiative.",
+      "The Emergent Academy is innovative in its ability to combine Computer Science and Digital Skills training, Business Skills, as well as job-readiness skills training combined with actual job experience as an all-inclusive package for participants. This activity is also relevant in its ability to recognize the need of the current digital age to be more gender equal. ",
+      " The digital economy in South Africa is growing with large opportunities of untapped growth potential that present exciting investment opportunities and ultimately job creation. When education meets technology added with job experience we believe that our academy will:",
+    ],
+    attributes: ["(1) Eliminate the causes of poverty on a grassroots level by providing socio-economic support and economically empowering young women to enable them to become economically active and independent citizens, thereby lowering their degree of vulnerability to contracting HIV.  ", "(2) Provide young women the opportunity to develop their personal and professional skills that will enable them to obtain jobs in the traditionally male-dominated technology/computer science industry and/or start their own sustainable entrepreneurial initiative. ", " "],
   },
   {
     id: "89c27fc7-c92f-44aa-ab5e-38a1133e8423",
@@ -62,14 +65,7 @@ export const ProgramsData = [
     slug: "emergent-business-accelerator",
     website: "https://dreamfactory.africa/",
     btnTitle: "Learn More",
-    longDescr: [
-      " ", 
-    " ",
-     " ",
-     " ",
-     " ",
-     " ",
-  ],
+    longDescr: [" ", " ", " ", " ", " ", " "],
     attributes: [" ", " ", " "],
   },
   {

@@ -33,7 +33,7 @@ export default async function ActiveProgramPage({
           <div className="flex  flex-col space-y-4 ">
             {
               programme?.longDescr.map((prog, i) => (
-                <p key={i}>{prog}</p>
+                <p key={i} className="text-justify">{prog}</p>
               ))
             }
           </div>

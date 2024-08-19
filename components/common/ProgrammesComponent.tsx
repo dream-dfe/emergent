@@ -9,33 +9,32 @@ type Props = {
 };
 
 const ProgrammesComponent = ({ data }: Props) => {
-
-    const appUrl = process.env.NEXT_PUBLIC_APP_URL as string
+  const appUrl = process.env.NEXT_PUBLIC_APP_URL as string;
   return (
     <Container>
       {data?.map((program) => (
         <section
-          className="grid grid-cols-1 md:grid-cols-2   gap-4 my-24"
+          className="mx-auto my-24 grid max-w-screen-xl grid-cols-1 gap-4 md:grid-cols-2"
           key={program.title}
         >
-          <div className="flex items-center justify-center">
+          <div className="flex max-h-80 items-center justify-center overflow-hidden">
             <Image
               src={program.imageSrc}
               width={1280}
               height={768}
               alt="accelerator"
-              className="rounded-lg"
+              className="aspect-square h-full w-full object-cover transition-all hover:scale-105"
             />
           </div>
-          <div className="flex flex-col ">
-            <h2 className="mb-4 text-xl tracking-tight font-extrabold text-slate-800 ">
+          <div className="flex flex-col">
+            <h2 className="mb-4 text-xl font-extrabold tracking-tight text-slate-800">
               {program.title}
             </h2>
-            <p className="text-gray-500">{program.descr}</p>
+            <p className="text-gray-500 text-justify">{program.descr}</p>
             <p className="my-4">
               {" "}
               Programme Status:{" "}
-              <span className=" text-gray-900 font-semibold">
+              <span className="font-semibold text-gray-900">
                 {" "}
                 {program.status}
               </span>{" "}

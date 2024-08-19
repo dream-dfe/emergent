@@ -25,12 +25,12 @@ const OurResourcesPopOver = () => {
               >
                Emergent Voices
               </Link>
-              <Link
+              {/* <Link
                 href="/courses"
                 className="-m-3 flex items-center rounded-lg p-2  hover:bg-violet-100 focus:outline-none "
               >
                 Emergent Courses
-              </Link>
+              </Link> */}
             </div>
           </NavigationMenuContent>
         </NavigationMenuItem>

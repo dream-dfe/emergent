@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function WitHero() {
   return (
-    <section className="relative flex h-[80vh] md:h-[60vh] w-full flex-col">
+    <section className="relative flex h-[70vh] md:h-[50vh] w-full flex-col">
       <div className="absolute -z-10 h-full w-full overflow-hidden">
         <Image
           src="/img/wit-banner.jpg"
