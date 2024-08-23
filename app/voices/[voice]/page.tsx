@@ -1,6 +1,8 @@
 import Container from "@/components/common/Container";
 import YoutubeVid from "./YoutubeVid";
 import { VoicesList } from "@/lib/data";
+import Footer from "@/components/common/Footer";
+import Header from "@/components/common/Header";
 
 export default async function VoicePage({
   params,
@@ -18,18 +20,24 @@ export default async function VoicePage({
   const filteredVoices = filterVoicesById(id as string);
 
   return (
-    <Container>
-      {filteredVoices.map((voice) => (
-        <div key={voice.id}>
-          <div className="flex flex-col p-4" >
-            <p className=" font-semibold">Title: {voice.title}</p>
-            <p className=" font-semibold">Speaker: {voice.facilitator}</p>
-            <p className=" font-semibold">Event: {voice.event}</p>
-            <p className=" font-semibold">Date: {voice.date}</p>
+    <>
+      <Header />
+      <section className="container">
+        {filteredVoices.map((voice) => (
+          <div key={voice.id}>
+            <div className="flex flex-col p-4">
+              <p className="text-2xl font-semibold">Title: {voice.title}</p>
+              <p className="text-muted-foreground">
+                Speaker: {voice.facilitator}
+              </p>
+              <p className="text-muted-foreground">Event: {voice.event}</p>
+              <p className="text-muted-foreground">Date: {voice.date}</p>
+            </div>
+            <YoutubeVid videoId={voice.videoId} />
           </div>
-          <YoutubeVid videoId={voice.videoId} />
-        </div>
-      ))}
-    </Container>
+        ))}
+      </section>
+      <Footer />
+    </>
   );
 }

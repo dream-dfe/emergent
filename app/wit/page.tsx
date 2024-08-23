@@ -6,10 +6,13 @@ import WitHero from "./WitHero";
 import AboutWit from "./AboutWit";
 import OtherDetailsWit from "./OtherDetailsWit";
 import PoweredByWit from "./PoweredByWit";
+import Header from "@/components/common/Header";
+import Footer from "@/components/common/Footer";
 
 export default function WIT() {
   return (
     <>
+      <Header />
       <WitHero />
       <section className="mx-auto my-8 max-w-screen-xl px-4">
         <h2 className="my-8 bg-clip-text text-center text-4xl font-bold leading-tight md:text-6xl">
@@ -36,6 +39,7 @@ export default function WIT() {
         </div>
         <PoweredByWit />
       </section>
+      <Footer />
     </>
   );
 }

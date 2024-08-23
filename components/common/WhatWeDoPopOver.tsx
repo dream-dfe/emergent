@@ -12,12 +12,12 @@ import { ourworkLinks } from "@/lib/links";
 
 
 
-export default function HeaderPopOver() {
+export default function WhatWeDoPopOver() {
   return (
     <NavigationMenu className=" z-50">
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="font-semibold text-base text-slate-600">
+          <NavigationMenuTrigger className="font-semibold text-base text-slate-600 ">
             What we do
           </NavigationMenuTrigger>
           <NavigationMenuContent >

@@ -1,18 +1,22 @@
-import React from 'react'
-import PayHero from './PayHero'
-import PayCTA from './PayCTA'
-import AboutPay from './AboutPay'
-import PaySolutions from './PaySolutions'
+import React from "react";
+import PayHero from "./PayHero";
+import PayCTA from "./PayCTA";
+import AboutPay from "./AboutPay";
+import PaySolutions from "./PaySolutions";
+import Footer from "@/components/common/Footer";
+import Header from "@/components/common/Header";
 
 const page = () => {
   return (
     <>
-    <PayHero/>
-    <AboutPay />
-    <PaySolutions/>
-    <PayCTA/>
+      <Header />
+      <PayHero />
+      <AboutPay />
+      <PaySolutions />
+      <PayCTA />
+      <Footer />
     </>
-  )
-}
+  );
+};
 
-export default page
+export default page;

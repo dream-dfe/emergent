@@ -4,10 +4,13 @@ import { VoiceType } from "@/types";
 import VoiceCard from "./VoicesCard";
 import Container from "@/components/common/Container";
 import { VoicesList } from "@/lib/data";
+import Header from "@/components/common/Header";
+import Footer from "@/components/common/Footer";
 
 const EmergentVoices = () => {
   return (
     <>
+    <Header/>
       <section className="pt-24 bg-white">
         <div className="px-12 mx-auto ">
           <div className="w-full mx-auto text-center  md:w-11/12 xl:w-9/12 ">
@@ -36,7 +39,7 @@ const EmergentVoices = () => {
           </div>
         </div>
       </Container>
-     
+     <Footer/>
     </>
   );
 };

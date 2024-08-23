@@ -14,23 +14,23 @@ const OurResourcesPopOver = () => {
     <NavigationMenu className="">
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="font-semibold text-base text-slate-600">
-            Our Resources
+          <NavigationMenuTrigger className="text-base font-semibold text-slate-600">
+            Resources
           </NavigationMenuTrigger>
           <NavigationMenuContent>
-            <div className="flex flex-col w-[200px] space-y-4 p-4  ">
+            <div className="flex w-[200px] flex-col space-y-4 p-4">
               <Link
                 href="/voices"
-                className="-m-3 flex items-center rounded-lg p-2  hover:bg-violet-100 focus:outline-none "
+                className="-m-3 flex items-center rounded-lg p-2 hover:bg-violet-100 focus:outline-none"
               >
-               Emergent Voices
+                Emergent Voices
               </Link>
-              {/* <Link
+              <Link
                 href="/courses"
-                className="-m-3 flex items-center rounded-lg p-2  hover:bg-violet-100 focus:outline-none "
+                className="-m-3 flex items-center rounded-lg p-2 hover:bg-violet-100 focus:outline-none"
               >
                 Emergent Courses
-              </Link> */}
+              </Link>
             </div>
           </NavigationMenuContent>
         </NavigationMenuItem>

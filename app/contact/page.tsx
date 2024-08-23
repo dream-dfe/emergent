@@ -1,9 +1,12 @@
 import CTA from "@/components/common/CTA";
 import ContactForm from "./ContactForm";
+import Header from "@/components/common/Header";
+import Footer from "@/components/common/Footer";
 
 const ContactPage = () => {
   return (
     <>
+      <Header />
       <section className="relative flex h-[30vh] items-center justify-center bg-[url('/img/hero-img.png')] bg-cover bg-no-repeat bg-blend-saturation sm:h-[70vh]">
         <div className="absolute inset-0 bg-violet-700 py-8 text-white opacity-50"></div>
       </section>
@@ -42,6 +45,7 @@ const ContactPage = () => {
       </div>
       <ContactForm />
       <CTA />
+      <Footer />
     </>
   );
 };
