@@ -6,12 +6,13 @@ import CurrentBanner from "../Home/CurrentBanner";
 import { auth } from "@clerk/nextjs/server";
 import { UserButton } from "@clerk/nextjs";
 import WhatWeDoPopOver from "./WhatWeDoPopOver";
+import { Button } from "../ui/button";
 
 const Header = () => {
   const { userId } = auth();
   return (
     <header className="sticky top-0 z-40">
-      <CurrentBanner /> 
+      <CurrentBanner />
       <div className="grid grid-cols-2 bg-white p-8 lg:grid-cols-4">
         {/* Left Area  */}
         <div className="flex items-center">
@@ -30,22 +31,19 @@ const Header = () => {
             Home
           </Link>
           <WhatWeDoPopOver />
-          <Link
-            href="/wit"
-            className="font-semibold  text-slate-600"
-          >
+          <Link href="/wit" className="font-semibold text-slate-600">
             WiT
           </Link>
           <Link
             href="/community"
-            className="whitespace-nowrap font-semibold text-slate-600 line-clamp-1"
+            className="line-clamp-1 whitespace-nowrap font-semibold text-slate-600"
           >
             Our Community
           </Link>
           <OurResourcesPopOver />
           <Link
             href="/contact"
-            className="whitespace-nowrap font-semibold text-slate-600 line-clamp-1"
+            className="line-clamp-1 whitespace-nowrap font-semibold text-slate-600"
           >
             Contact Us
           </Link>
@@ -53,9 +51,17 @@ const Header = () => {
 
         <div className="flex items-center justify-end space-x-4">
           {!userId && (
-            <div>
-              <Link href="/sign-in" className="font-semibold text-slate-600">Sign In</Link>
-              <Link href="/sign-up" className="font-semibold text-slate-600">Sign Up</Link>
+            <div className="flex space-x-3">
+              <Button asChild variant="secondary">
+                <Link href="/sign-in" className="font-semibold">
+                  Sign In
+                </Link>
+              </Button>
+              <Button asChild variant="secondary">
+                <Link href="/sign-up" className="font-semibold">
+                  Sign Up
+                </Link>
+              </Button>
             </div>
           )}
           {userId && (
