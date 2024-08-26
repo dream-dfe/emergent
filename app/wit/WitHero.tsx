@@ -14,13 +14,13 @@ export default function WitHero() {
           alt="hero-img"
         />
       </div>
-      <div className="absolute md:top-10 ml-5 grid gap-10">
-        <h1 className="text-2xl leading-tight md:text-6xl">
+      <div className="absolute  ml-5 grid gap-10">
+        <h1 className="text-2xl leading-tight md:text-4xl">
           <span className="text-white">Standard Chartered </span> <br />
           <span className="text-[#38D200]">Women in Tech </span> <br />
           <span className="text-white"> Accelerator Programme</span>
         </h1>
-        <p className="text-xl md:text-4xl">
+        <p className="text-xl md:text-2xl">
           Get Expert Training, Coaching & <br /> Secure Seed Funding for your
           Business!
         </p>
@@ -35,7 +35,7 @@ export default function WitHero() {
               <span className="text-lg md:text-2xl"> APPLY NOW</span>{" "}
             </Link>
           </Button>{" "}
-          <h2 className="text-xl text-white md:text-2xl lg:text-4xl">
+          <h2 className="text-xl text-white md:text-2xl ">
             {" "}
             Deadline for application is 07<sup>th</sup> September 2024
           </h2>

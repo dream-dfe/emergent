@@ -11,7 +11,7 @@ const Header = () => {
   const { userId } = auth();
   return (
     <header className="sticky top-0 z-40">
-      <CurrentBanner />
+      <CurrentBanner /> 
       <div className="grid grid-cols-2 bg-white p-8 lg:grid-cols-4">
         {/* Left Area  */}
         <div className="flex items-center">
@@ -53,10 +53,10 @@ const Header = () => {
 
         <div className="flex items-center justify-end space-x-4">
           {!userId && (
-            <>
+            <div>
               <Link href="/sign-in" className="font-semibold text-slate-600">Sign In</Link>
               <Link href="/sign-up" className="font-semibold text-slate-600">Sign Up</Link>
-            </>
+            </div>
           )}
           {userId && (
             <Link href="/user-profile" className="font-semibold text-slate-600">
