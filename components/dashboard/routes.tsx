@@ -3,6 +3,7 @@
 import { HiOutlineHome, HiOutlineUserGroup } from "react-icons/hi2";
 import { IoHomeOutline, IoSettingsOutline } from "react-icons/io5";
 import { LuLayoutGrid } from "react-icons/lu";
+import { RiGraduationCapLine } from "react-icons/ri";
 
 export const AdminRoutes = [
   {
@@ -20,7 +21,11 @@ export const AdminRoutes = [
     href: "/dashboard/users",
     icon: HiOutlineUserGroup,
   },
-
+  {
+    title: "Programmes",
+    href: "/dashboard/programmes",
+    icon: RiGraduationCapLine,
+  },
   {
     title: "Settings",
     href: "/dashboard/settings",

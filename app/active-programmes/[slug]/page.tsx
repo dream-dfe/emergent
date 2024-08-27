@@ -1,4 +1,6 @@
 import Container from "@/components/common/Container";
+import Footer from "@/components/common/Footer";
+import Header from "@/components/common/Header";
 import { Button } from "@/components/ui/button";
 import { getProgrammeDataById } from "@/lib/fetchData";
 import Link from "next/link";
@@ -17,6 +19,7 @@ export default async function ActiveProgramPage({
 
   return (
     <>
+    <Header/>
       <div
         className="relative  flex items-center justify-center h-[30vh] sm:h-[70vh]  bg-no-repeat bg-cover bg-blend-saturation "
         style={{ backgroundImage: `url(${img})` }}
@@ -53,6 +56,7 @@ export default async function ActiveProgramPage({
               </div>
           </Container>
       </section>
+      <Footer/>
     </>
   );
 } 

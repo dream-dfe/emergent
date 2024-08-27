@@ -1,4 +1,6 @@
 import Container from "@/components/common/Container";
+import Footer from "@/components/common/Footer";
+import Header from "@/components/common/Header";
 import { getProgrammeDataById } from "@/lib/fetchData";
 
 export default async function OpenProgramPage({
@@ -15,6 +17,7 @@ export default async function OpenProgramPage({
 
   return (
     <>
+    <Header/>
       <div
         className="relative  flex items-center justify-center h-[30vh] sm:h-[70vh]  bg-no-repeat bg-cover bg-blend-saturation "
         style={{ backgroundImage: `url(${img})` }}
@@ -46,6 +49,7 @@ export default async function OpenProgramPage({
 
           </Container>
       </section>
+      <Footer/>
     </>
   );
 }
