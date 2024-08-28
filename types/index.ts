@@ -21,7 +21,7 @@ export type ProgramDataType = {
   btnTitle: string;
 };
 
-export type Roles = "admin" | "user" | "student";
+export type Roles = "admin" | "user" | "student" | "manager";
 
 export type AuthUser = {
   id: string;

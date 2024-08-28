@@ -30,7 +30,6 @@ export const programmesSchema = z.object({
   intro: requiredString,
   description: z.string().optional(),
   status: requiredString,
-  group: requiredString
 });
 
 

@@ -62,9 +62,9 @@ export default function EditUserRole({
 }: {
   id: string;
   role: string;
-  name: string;
+  name: string; 
 }) {
-  const rolesList = ["student", "user"];
+  const rolesList = ["student", "user", "manager"];
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
