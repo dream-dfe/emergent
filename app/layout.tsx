@@ -3,6 +3,7 @@ import { Fira_Sans } from "next/font/google";
 import { ClerkProvider } from "@clerk/nextjs";
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
+import Script from "next/script";
 
 const fira = Fira_Sans({
   subsets: ["latin"],
@@ -27,7 +28,12 @@ export default function RootLayout({
         <body className={`${fira.variable} `}>
           {children}
           <Toaster />
+          <Script
+          src="https://player.vimeo.com/api/player.js"
+          strategy="beforeInteractive"
+        />
         </body>
+
       </html>
     </ClerkProvider>
   );

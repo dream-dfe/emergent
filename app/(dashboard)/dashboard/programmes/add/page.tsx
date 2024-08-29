@@ -1,6 +1,17 @@
+import { redirect } from "next/navigation";
 import NewProgrammeForm from "./NewProgrammeForm";
+import { auth } from "@clerk/nextjs/server";
 
 export default function AddProgramme() {
+  
+  const { sessionClaims } = auth();
+
+  const allowedRoles = ["admin", "manager"];
+
+  if (!allowedRoles.includes(sessionClaims?.metadata.role)) {
+    redirect("/");
+  }
+  
   return (
     <section className="mx-auto max-w-6xl px-5">
       <div className="my-5 text-center">

@@ -54,3 +54,20 @@ interface PhoneNumber {
   object: string;
   phone_number: string;
 }
+
+
+export type CourseType = {
+  id: string,
+  title: string
+  videoUrl: string
+  description: string
+}
+
+export type VideoType = {
+  id: string,
+  title: string
+  slug: string
+  url: string
+  banner: string
+  description: string
+}

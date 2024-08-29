@@ -8,6 +8,7 @@ import OtherDetailsWit from "./OtherDetailsWit";
 import PoweredByWit from "./PoweredByWit";
 import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
+import FAQsWit from "./FAQsWit";
 
 export default function WIT() {
   return (
@@ -38,6 +39,7 @@ export default function WIT() {
           </Button>{" "}
         </div>
         <PoweredByWit />
+        <FAQsWit/>
       </section>
       <Footer />
     </>
