@@ -66,8 +66,8 @@ export default function NewProgrammeForm() {
       await createProgramme(formData);
     } catch (error) {
       toast({
-        title: "Edited",
-        description: `User Role changed Successfully. `,
+        title: "Added",
+        description: `New Program Successfully. `,
       });
     }
   }

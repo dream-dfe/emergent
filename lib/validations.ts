@@ -25,6 +25,8 @@ const ImageSchema = z
 
 
 export const programmesSchema = z.object({
+  id: z.string().optional(),
+  bannerUrl: z.string().optional(),
   title: requiredString,
   banner: ImageSchema,
   intro: requiredString,

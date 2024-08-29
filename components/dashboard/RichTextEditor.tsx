@@ -10,16 +10,17 @@ import OrderedList from "@tiptap/extension-ordered-list";
 
 type TextEditorProps = {
   onChange: (content: string) => void;
+  initialContent?: string; // Add this line
 };
 
 const RichTextEditor = forwardRef<HTMLDivElement, TextEditorProps>(
-  ({ onChange }, ref) => {
+  ({ onChange, initialContent = "" }, ref) => {
     const editor = useEditor({
       extensions: [
         StarterKit, Underline
       ],
 
-      content: "",
+      content: initialContent,
       onUpdate: ({ editor }) => {
         onChange(editor.getHTML());
       },

@@ -1,3 +1,5 @@
+import { programmes } from "@/db/schema";
+
 export type VoiceType = {
   id: string;
   title: string;
@@ -20,6 +22,8 @@ export type ProgramDataType = {
   pathUrl?: string;
   btnTitle: string;
 };
+
+export type ProgramesType = typeof programmes.$inferInsert;
 
 export type Roles = "admin" | "user" | "student" | "manager";
 
