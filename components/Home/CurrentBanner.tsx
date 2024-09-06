@@ -46,7 +46,7 @@ export default function CurrentBanner() {
           >
             <circle r={1} cx={1} cy={1} />
           </svg>
-          Deadline for application 07<sup>th</sup> September 2024.
+          Deadline for application 14<sup>th</sup> September 2024.
         </p>
         <Link
           href="/wit"

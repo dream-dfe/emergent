@@ -37,7 +37,7 @@ export default function WitHero() {
           </Button>{" "}
           <h2 className="text-xl text-white md:text-2xl ">
             {" "}
-            Deadline for application is 07<sup>th</sup> September 2024
+            Deadline for application is 14<sup>th</sup> September 2024
           </h2>
         </div>
       </div>
