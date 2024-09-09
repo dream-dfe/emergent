@@ -2,7 +2,7 @@ import Footer from "@/components/common/Footer";
 import Header from "@/components/common/Header";
 import { auth } from "@clerk/nextjs/server";
 import { redirect } from "next/navigation";
-import YoutubeVid from "@/app/voices/[voice]/YoutubeVid";
+import YoutubeVid from "@/components/common/YoutubeVid";
 
 interface SearchParams {
   title: string;

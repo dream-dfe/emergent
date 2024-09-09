@@ -1,5 +1,5 @@
 import Container from "@/components/common/Container";
-import YoutubeVid from "./YoutubeVid";
+import YoutubeVid from "../../../components/common/YoutubeVid";
 import { VoicesList } from "@/lib/data";
 import Footer from "@/components/common/Footer";
 import Header from "@/components/common/Header";
@@ -33,7 +33,7 @@ export default async function VoicePage({
               <p className="text-muted-foreground">Event: {voice.event}</p>
               <p className="text-muted-foreground">Date: {voice.date}</p>
             </div>
-            <YoutubeVid videoId={voice.videoId} />
+            <YoutubeVid videoId={voice.videoId} title={voice.title} />
           </div>
         ))}
       </section>

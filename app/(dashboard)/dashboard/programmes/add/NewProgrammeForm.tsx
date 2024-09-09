@@ -195,7 +195,7 @@ export default function NewProgrammeForm() {
             <FormItem>
               <FormLabel>Description</FormLabel>
               <FormControl>
-                <RichTextEditor onChange={field.onChange} ref={field.ref} />
+                <RichTextEditor onChange={field.onChange} />
               </FormControl>
               <FormMessage />
             </FormItem>

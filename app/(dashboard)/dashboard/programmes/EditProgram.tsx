@@ -248,7 +248,6 @@ export default function EditProgram({ program }: { program: ProgramesType }) {
                     <FormControl>
                       <RichTextEditor
                         onChange={field.onChange}
-                        ref={field.ref}
                         initialContent={field.value}
                       />
                     </FormControl>
