@@ -10,90 +10,101 @@ import { AiOutlineRedo, AiOutlineUndo } from "react-icons/ai";
 import { BsTypeUnderline } from "react-icons/bs";
 import { IoListOutline } from "react-icons/io5";
 
+
+const Button = ({
+  onClick,
+  isActive,
+  disabled,
+  children,
+}: {
+  onClick: () => void;
+  isActive: boolean;
+  disabled?: boolean;
+  children: React.ReactNode;
+}) => (
+  <button
+    type="button"
+    onClick={onClick}
+    disabled={disabled}
+    className={`p-2 ${isActive ? "bg-violet-500 text-white rounded-md" : ""}`}
+  >
+    {children}
+  </button>
+);
+
 export default function TextEditorMenuBar({
   editor,
 }: {
   editor: Editor | null;
 }) {
-  if (!editor) {
-    return null;
-  }
+  if (!editor) return null;
+
+  const buttons = [
+    {
+      icon: <RiBold className="size-5" />,
+      onClick: () => editor.chain().focus().toggleBold().run(),
+      isActive: editor.isActive("bold"),
+    },
+    {
+      icon: <BsTypeUnderline className="size-5" />,
+      onClick: () => editor.chain().focus().toggleUnderline().run(),
+      isActive: editor.isActive("underline"),
+    },
+    {
+      icon: <RiItalic className="size-5" />,
+      onClick: () => editor.chain().focus().toggleItalic().run(),
+      isActive: editor.isActive("italic"),
+      disabled: !editor.can().chain().focus().toggleItalic().run(),
+    },
+    {
+      icon: <RiStrikethrough className="size-5" />,
+      onClick: () => editor.chain().focus().toggleStrike().run(),
+      isActive: editor.isActive("strike"),
+      disabled: !editor.can().chain().focus().toggleStrike().run(),
+    },
+    {
+      icon: <RiCodeSSlashLine className="size-5" />,
+      onClick: () => editor.chain().focus().toggleCode().run(),
+      isActive: editor.isActive("code"),
+      disabled: !editor.can().chain().focus().toggleCode().run(),
+    },
+    {
+      icon: <IoListOutline className="size-5" />,
+      onClick: () => editor.chain().focus().toggleBulletList().run(),
+      isActive: editor.isActive("bulletList"),
+    },
+    {
+      icon: <RiListOrdered2 className="size-5" />,
+      onClick: () => editor.chain().focus().toggleOrderedList().run(),
+      isActive: editor.isActive("orderedList"),
+      disabled: !editor.can().chain().focus().toggleOrderedList().run(),
+    },
+    {
+      icon: <AiOutlineUndo className="size-5" />,
+      onClick: () => editor.chain().focus().undo().run(),
+      isActive: editor.isActive("undo"),
+      disabled: !editor.can().chain().focus().undo().run(),
+    },
+    {
+      icon: <AiOutlineRedo className="size-5" />,
+      onClick: () => editor.chain().focus().redo().run(),
+      isActive: editor.isActive("redo"),
+      disabled: !editor.can().chain().focus().redo().run(),
+    },
+  ];
+
   return (
     <div className="mb-2 flex space-x-2">
-      <button
-        type="button"
-        onClick={() => editor.chain().focus().toggleBold().run()}
-        
-        className={`p-2 ${editor.isActive("bold") ? "bg-violet-500 text-white rounded-md" : ""}`}
-      >
-        <RiBold className="size-5"/>
-      </button>
-      <button
-        onClick={() => editor.chain().focus().toggleUnderline().run()}
-        className={`p-2 ${editor.isActive("underline") ? "bg-violet-500 text-white rounded-md" : ""}`}
-      >
-        <BsTypeUnderline className="size-5"/>
-      </button>
-      <button
-        type="button"
-        onClick={() => editor.chain().focus().toggleItalic().run()}
-        disabled={!editor.can().chain().focus().toggleItalic().run()}
-        className={`p-2 ${editor.isActive("italic") ? "bg-violet-500 text-white rounded-md" : ""}`}
-      >
-        <RiItalic />
-      </button>
-      <button
-        type="button"
-        onClick={() => editor.chain().focus().toggleStrike().run()}
-        disabled={!editor.can().chain().focus().toggleStrike().run()}
-        className={`p-2 ${editor.isActive("strike") ? "bg-violet-500 text-white rounded-md" : ""}`}
-      >
-        <RiStrikethrough className="size-5"/>
-      </button>
-      <button
-        type="button"
-        onClick={() => editor.chain().focus().toggleCode().run()}
-        disabled={!editor.can().chain().focus().toggleCode().run()}
-        className={`p-2 ${editor.isActive("code") ? "bg-violet-500 text-white rounded-md" : ""}`}
-      >
-        <RiCodeSSlashLine className="size-5" />
-      </button>
-      <button
-      type="button"
-        onClick={() => {
-          editor.chain().focus().toggleBulletList().run();
-        }}
-        className={`p-2 ${editor.isActive("bulletList") ? "bg-violet-500 text-white rounded-md" : ""}`}
-      >
-        <IoListOutline className="size-5"/>
-      </button>
-      <button
-        type="button"
-        onClick={() => editor.chain().focus().toggleOrderedList().run()}
-        disabled={!editor.can().chain().focus().toggleOrderedList().run()}
-        className={`p-2 ${editor.isActive("orderedList") ? "bg-violet-500 text-white rounded-md" : ""}`}
-      >
-        <RiListOrdered2 className="size-5"/>
-      </button>
-      <button
-        onClick={(e) => {
-          e.preventDefault();
-          editor.chain().focus().undo().run();
-        }}
-        disabled={!editor.can().chain().focus().undo().run()}
-        className={`p-2 ${editor.isActive("undo") ? "bg-violet-500 text-white rounded-md" : ""}`}
-      >
-        <AiOutlineUndo className="size-5" />
-      </button>
-      <button
-        onClick={() => {
-          editor.chain().focus().redo().run();
-        }}
-        disabled={!editor.can().chain().focus().redo().run()}
-        className={`p-2 ${editor.isActive("redo") ? "bg-violet-500 text-white rounded-md" : ""}`}
-      >
-        <AiOutlineRedo className="size-5" />
-      </button>
+      {buttons.map(({ icon, onClick, isActive, disabled }, index) => (
+        <Button
+          key={index}
+          onClick={onClick}
+          isActive={isActive}
+          disabled={disabled}
+        >
+          {icon}
+        </Button>
+      ))}
     </div>
   );
 }

@@ -24,6 +24,6 @@ export default function VideoEmbed({
         allowFullScreen
         className="rounded-lg border border-gray-300 shadow-lg"
       />
-    </div>
+    </div>   
   );
 }

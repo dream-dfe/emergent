@@ -214,7 +214,7 @@ export const VoicesList = [
 //
 //
 //
-// 262c1d1c-03da-4f58-a3ba-2ecec0cda99a
+// 
 //
 //
 //
@@ -228,40 +228,86 @@ export const VoicesList = [
 export const videoList = [
   {
     id: "262c1d1c-03da-4f58-a3ba-2ecec0cda99a",
-    title: "My Purpose Module 1",
-    slug: "my-purpose-mod-1",
-    url: "https://player.vimeo.com/video/1004060229?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    title: "My Purpose Module 1 Video 1",
+    slug: "my-purpose-mod-1-video-1",
+    videoId: "vwGji4RxTvA",
     banner: "/img/courses/dodigi.png",
     description:
-      "This Is a Random description to describe what this video is about. We are just testing out to see if the data fits well on the screen",
+      "",
   },
   {
     id: "27c32932-7d56-4743-8be5-ae128e4665eb",
-    title: "My Purpose Module 1",
-    slug: "my-purpose-mod-1",
-    url: "https://youtu.be/vwGji4RxTvA",
+    title: "My Purpose Module 1 Video 2",
+    slug: "my-purpose-mod-1-video-2",
+    videoId: "uN9QHoXUHbI",
     banner: "/img/courses/dodigi.png",
     description:
-      "This Is a Random description to describe what this video is about. We are just testing out to see if the data fits well on the screen",
+      "",
   },
   {
-    id: "97dc96d1-edac-42b5-908e-39a921f601fd",
-    title: "My Purpose Module 1",
-    slug: "my-purpose-mod-1",
-    url: "https://drive.google.com/file/d/1rex40ukrQkAxPmYc1rPp36zusNDBh9yN/view?usp=drive_link",
+    id: "27c32932-7d56-4743-8be5-ae128e4665ec",
+    title: "My Purpose Module 1 Video 3",
+    slug: "my-purpose-mod-1-video-3",
+    videoId: "DM6tJuL2Pjs",
     banner: "/img/courses/dodigi.png",
     description:
-      "This Is a Random description to describe what this video is about. We are just testing out to see if the data fits well on the screen",
+      "",
   },
   {
-    id: "4aa535d7-1932-4b2e-b65a-f62894785c1d",
-    title: "My Purpose Module 1",
-    slug: "my-purpose-mod-1",
-    url: "https://drive.google.com/file/d/1rex40ukrQkAxPmYc1rPp36zusNDBh9yN/view?usp=drive_link",
+    id: "27c32932-7d56-4743-8be5-ae128e4665ed",
+    title: "My Purpose Module 1 Video 4",
+    slug: "my-purpose-mod-1-video-4",
+    videoId: "5V01QjVroBk",
     banner: "/img/courses/dodigi.png",
     description:
-      "This Is a Random description to describe what this video is about. We are just testing out to see if the data fits well on the screen",
+      "",
   },
+  {
+    id: "27c32932-7d56-4743-8be5-ae128e4665ee",
+    title: "My Purpose Module 1 Video 5",
+    slug: "my-purpose-mod-1-video-5",
+    videoId: "jzZrEZJIp0g",
+    banner: "/img/courses/dodigi.png",
+    description:
+      "",
+  },
+  {
+    id: "27c32932-7d56-4743-8be5-ae128e4665ef",
+    title: "My Purpose Module 2 Video 1",
+    slug: "my-purpose-mod-2-video-2",
+    videoId: "k942IUkrMhY",
+    banner: "/img/courses/dodigi.png",
+    description:
+      "",
+  },
+  {
+    id: "27c32932-7d56-4743-8be5-ae128e4665eg",
+    title: "My Purpose Module 2 Video 2",
+    slug: "my-purpose-mod-2-video-2",
+    videoId: "-9ulzmPAatk",
+    banner: "/img/courses/dodigi.png",
+    description:
+      "",
+  },
+  {
+    id: "27c32932-7d56-4743-8be5-ae128e4665eh",
+    title: "My Purpose Module 2 Video 3",
+    slug: "my-purpose-mod-2-video-2",
+    videoId: "hfIa1M8Njdc",
+    banner: "/img/courses/dodigi.png",
+    description:
+      "",
+  },
+  {
+    id: "27c32932-7d56-4743-8be5-ae128e4665ei",
+    title: "My Purpose Module 2 Video 4",
+    slug: "my-purpose-mod-2-video-2",
+    videoId: "I7gxRCFMVvU",
+    banner: "/img/courses/dodigi.png",
+    description:
+      "",
+  },
+ 
 ];
 
 

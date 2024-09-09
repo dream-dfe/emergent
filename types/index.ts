@@ -67,7 +67,7 @@ export type VideoType = {
   id: string,
   title: string
   slug: string
-  url: string
+  videoId: string
   banner: string
   description: string
 }

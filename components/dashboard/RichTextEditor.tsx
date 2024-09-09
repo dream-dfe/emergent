@@ -1,49 +1,38 @@
-import React, { forwardRef } from "react";
 import { useEditor, EditorContent } from "@tiptap/react";
 import StarterKit from "@tiptap/starter-kit";
-
-import ListItem from "@tiptap/extension-list-item";
-import CodeBlock from "@tiptap/extension-code-block";
-import TextEditorMenuBar from "./text-editor-menu-bar";
 import Underline from "@tiptap/extension-underline";
-import OrderedList from "@tiptap/extension-ordered-list";
+import TextEditorMenuBar from "./text-editor-menu-bar";
+
+
 
 type TextEditorProps = {
-  onChange: (content: string) => void;
-  initialContent?: string; // Add this line
-};
+    onChange: (content: string) => void;
+    initialContent?: string; // Add this line
+  };
 
-const RichTextEditor = forwardRef<HTMLDivElement, TextEditorProps>(
-  ({ onChange, initialContent = "" }, ref) => {
+
+export default function RichTextEditor({
+    onChange,
+    initialContent,
+  }: TextEditorProps) {
+
     const editor = useEditor({
-      extensions: [
-        StarterKit, Underline
-      ],
-
-      content: initialContent,
-      onUpdate: ({ editor }) => {
-        onChange(editor.getHTML());
-      },
-      editorProps: {
-        attributes: {
-          class:
-            "min-h-[150px] cursor-text rounded-md border p-5 ring-offset-background focus-within:outline-none focus-within:ring-2 focus-within:ring-ring focus-within:ring-offset-2",
+        extensions: [StarterKit, Underline],
+        content: initialContent,
+        onUpdate : ({editor}) => {
+            onChange(editor.getHTML())
         },
-      },
-      
-    });
-
-    if (!editor) {
-      return null;
-    }
-
-    return (
-      <div ref={ref}>
-        <TextEditorMenuBar editor={editor} />
-        <EditorContent editor={editor} style={{ whiteSpace: "pre-line" }} />
-      </div>
-    );
-  },
-);
-
-export default RichTextEditor;
+        editorProps: {
+            attributes: {
+                class: "min-h-[150px] cursor-text rounded-md border p-5 ring-offset-background focus-within:outline-none focus-within:ring-2 focus-within:ring-ring focus-within:ring-offset-2 "
+            }
+        },
+        immediatelyRender: false
+    })
+  return (
+    <div>
+      <TextEditorMenuBar editor={editor}/>
+        <EditorContent editor={editor} />
+    </div>
+  )
+}

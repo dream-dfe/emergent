@@ -1,12 +1,8 @@
-'use client'
+"use client";
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from "react";
 
-type Props = {
-  videoId: string;
-};
-
-const YoutubeVid = ({ videoId }: Props) => {
+const YoutubeVid = ({ videoId, title }: { videoId: string; title: string }) => {
   const [load, setLoad] = useState(false);
   const videoRef = useRef<HTMLDivElement | null>(null);
 
@@ -18,7 +14,7 @@ const YoutubeVid = ({ videoId }: Props) => {
       }
     });
 
-    const currentVideoRef = videoRef.current; // Store the current value
+    const currentVideoRef = videoRef.current;
 
     if (currentVideoRef) {
       observer.observe(currentVideoRef);
@@ -32,16 +28,14 @@ const YoutubeVid = ({ videoId }: Props) => {
   }, [videoRef]);
 
   return (
-    <div ref={videoRef}>
+    <div ref={videoRef} className="relative h-0 overflow-hidden pb-[56.25%]">
       {load ? (
         <iframe
-          width="100%"
-          height="720"
-          src={`https://www.youtube.com/embed/${videoId}`} 
-          title="YouTube video player"
-          frameBorder="0"
+          src={`https://www.youtube.com/embed/${videoId}?modestbranding=1&rel=0&iv_load_policy=3`}
+          title={title}
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
+          className="absolute left-0 top-0 h-full w-full"
         ></iframe>
       ) : (
         <div>Loading...</div>

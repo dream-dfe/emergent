@@ -7,7 +7,7 @@ export default function VideoCard({ video }: { video: VideoType }) {
   return (
     <Link
       className="group relative flex flex-col rounded-md border border-violet-300 p-1"
-      href={`/courses/${video.slug}?id=${video.id}&title=${video.title}&url=${video.url}&description=${video.description}&banner=${video.banner}`}
+      href={`/courses/${video.slug}?id=${video.id}&title=${video.title}&videoId=${video.videoId}&description=${video.description}&banner=${video.banner}`}
     >
       <div className="max-h-40 max-w-md overflow-hidden rounded-md">
         <Image
