@@ -7,12 +7,13 @@ import { auth } from "@clerk/nextjs/server";
 import { UserButton } from "@clerk/nextjs";
 import WhatWeDoPopOver from "./WhatWeDoPopOver";
 import { Button } from "../ui/button";
+import { OurCommunityPopOver } from "./our-community-popover";
 
 const Header = () => {
   const { userId } = auth();
   return (
     <header className="sticky top-0 z-40">
-      <CurrentBanner />
+      {/* <CurrentBanner /> */}
       <div className="grid grid-cols-2 bg-white p-8 lg:grid-cols-4">
         {/* Left Area  */}
         <div className="flex items-center">
@@ -34,12 +35,7 @@ const Header = () => {
           <Link href="/wit" className="font-semibold text-slate-600">
             WiT
           </Link>
-          <Link
-            href="/community"
-            className="line-clamp-1 whitespace-nowrap font-semibold text-slate-600"
-          >
-            Our Community
-          </Link>
+          <OurCommunityPopOver />
           <OurResourcesPopOver />
           <Link
             href="/contact"
