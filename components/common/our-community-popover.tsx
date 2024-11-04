@@ -11,7 +11,7 @@ import Link from "next/link";
 
 export function OurCommunityPopOver() {
   return (
-    <NavigationMenu className="">
+    <NavigationMenu className="z-20">
       <NavigationMenuList>
         <NavigationMenuItem>
           <NavigationMenuTrigger className="text-base font-semibold text-slate-600">

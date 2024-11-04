@@ -1,4 +1,3 @@
-
 import {
   Drawer,
   DrawerContent,
@@ -13,6 +12,7 @@ import OurResourcesPopOver from "./OurResourcesPopOver";
 import { auth } from "@clerk/nextjs/server";
 import { Button } from "../ui/button";
 import { UserButton } from "@clerk/nextjs";
+import { OurCommunityPopOver } from "./our-community-popover";
 
 const SideDrawer = () => {
   const { userId } = auth();
@@ -38,15 +38,15 @@ const SideDrawer = () => {
           >
             WiT
           </Link>
-
+          <OurCommunityPopOver />
           <OurResourcesPopOver />
           {/* <Link href="/about" className="text-lg font-semibold text-slate-600">
             About
           </Link> */}
         </div>
-        <div className="flex flex-col items-center mt-5 space-y-3 ">
+        <div className="mt-5 flex flex-col items-center space-y-3">
           {!userId && (
-            <div className="flex flex-col items-center  space-y-3">
+            <div className="flex flex-col items-center space-y-3">
               <Button asChild variant="ghost">
                 <Link href="/sign-in" className="font-semibold">
                   Sign In
@@ -60,10 +60,10 @@ const SideDrawer = () => {
             </div>
           )}
           {userId && (
-             <Button asChild variant="ghost" > 
-            <Link href="/user-profile" className="font-semibold ">
-              Profile
-            </Link>
+            <Button asChild variant="ghost">
+              <Link href="/user-profile" className="font-semibold">
+                Profile
+              </Link>
             </Button>
           )}
           <div className="">
