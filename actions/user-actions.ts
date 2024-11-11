@@ -10,7 +10,6 @@ export async function setRole(formData: FormData) {
     return { message: "Not Authorized" };
   }
 
-
   try {
     const res = await clerkClient().users.updateUser(
       formData.get("id") as string,
@@ -18,8 +17,7 @@ export async function setRole(formData: FormData) {
         publicMetadata: { role: formData.get("role") },
       },
     );
-    console.log(res.publicMetadata);
-    
+
     return { message: res.publicMetadata };
   } catch (err) {
     return { message: err };

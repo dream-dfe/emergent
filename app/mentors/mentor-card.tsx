@@ -6,11 +6,11 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardFooter } from "@/components/ui/card"
 
 interface MentorProps {
-  image?: string
-  name: string
-  jobTitle: string
-  organization: string
-  biography?: string
+  image: string;
+  name: string;
+  jobTitle?: string;
+  organization?: string;
+  biography: string;
 }
 
 export function MentorCard({ image, name, jobTitle, organization, biography = '' }: MentorProps) {
@@ -42,7 +42,7 @@ export function MentorCard({ image, name, jobTitle, organization, biography = ''
           </div>
           <div className="flex-grow">
             <h2 className="text-2xl font-bold text-center lg:text-left">{name}</h2>
-            <p className="text-sm text-muted-foreground text-center lg:text-left">{jobTitle}</p>
+            <p className="text-sm text-muted-foreground text-center lg:text-left capitalize">{jobTitle}</p>
             <p className="text-sm text-muted-foreground mb-4 text-center lg:text-left">{organization}</p>
             <div className="text-sm">
               {isExpanded ? biography : truncatedBiography}

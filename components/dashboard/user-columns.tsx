@@ -67,7 +67,7 @@ export const userColumns: ColumnDef<AuthUser>[] = [
     cell: ({ row }) => {
       const { publicMetadata } = row.original;
 
-      return <div>{publicMetadata?.role}</div>;
+      return <div>{publicMetadata.role}</div>;
     },
   },
   {

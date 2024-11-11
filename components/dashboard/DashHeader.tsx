@@ -1,10 +1,10 @@
-import { UserButton } from "@clerk/nextjs";
 import { currentUser } from "@clerk/nextjs/server";
 import Link from "next/link";
-import { redirect } from "next/navigation";
+import CustomUserBtn from "../common/custom-user-btn";
 
 export default async function DashHeader() {
   const user = await currentUser();
+  const userRole = user?.publicMetadata.role as string;
 
   return (
     <div className="sticky top-0 z-40">
@@ -21,7 +21,7 @@ export default async function DashHeader() {
           </Link>
 
           <div className="ml-auto">
-            <UserButton />
+            <CustomUserBtn role={userRole} />
           </div>
         </div>
       </div>

@@ -1,4 +1,4 @@
-"use client";
+
 
 import {
   NavigationMenu,
@@ -7,9 +7,10 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
+import { User } from "@clerk/nextjs/server";
 import Link from "next/link";
 
-export function OurCommunityPopOver() {
+export function OurCommunityPopOver({ user }: { user: User}) {
   return (
     <NavigationMenu className="z-20">
       <NavigationMenuList>
@@ -25,6 +26,14 @@ export function OurCommunityPopOver() {
               >
                 Mentors
               </Link>
+              {user && (
+                <Link
+                  href="/bookings"
+                  className="-m-3 flex items-center rounded-lg p-2 hover:bg-violet-100 focus:outline-none"
+                >
+                  Book a Mentor
+                </Link>
+              )}
             </div>
           </NavigationMenuContent>
         </NavigationMenuItem>

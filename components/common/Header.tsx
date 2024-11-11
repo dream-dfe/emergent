@@ -2,15 +2,19 @@ import Image from "next/image";
 import Link from "next/link";
 import SideDrawer from "./SideDrawer";
 import OurResourcesPopOver from "./OurResourcesPopOver";
-import CurrentBanner from "../Home/CurrentBanner";
-import { auth } from "@clerk/nextjs/server";
+// import CurrentBanner from "../Home/CurrentBanner";
+import { currentUser, User } from "@clerk/nextjs/server";
 import { UserButton } from "@clerk/nextjs";
 import WhatWeDoPopOver from "./WhatWeDoPopOver";
 import { Button } from "../ui/button";
 import { OurCommunityPopOver } from "./our-community-popover";
+import CustomUserBtn from "./custom-user-btn";
 
-const Header = () => {
-  const { userId } = auth();
+const Header = async () => {
+  const user = await currentUser();
+
+  const userRole = user?.publicMetadata.role as string;
+
   return (
     <header className="sticky top-0 z-40">
       {/* <CurrentBanner /> */}
@@ -35,7 +39,7 @@ const Header = () => {
           <Link href="/wit" className="font-semibold text-slate-600">
             WiT
           </Link>
-          <OurCommunityPopOver />
+          <OurCommunityPopOver user={user as User} />
           <OurResourcesPopOver />
           <Link
             href="/contact"
@@ -46,7 +50,7 @@ const Header = () => {
         </div>
 
         <div className="flex items-center justify-end space-x-4">
-          {!userId && (
+          {!user && (
             <div className="flex space-x-3">
               <Button asChild variant="secondary">
                 <Link href="/sign-in" className="font-semibold">
@@ -60,13 +64,13 @@ const Header = () => {
               </Button>
             </div>
           )}
-          {userId && (
+          {user && (
             <Link href="/user-profile" className="font-semibold text-slate-600">
               Profile
             </Link>
           )}
           <div className="ml-auto">
-            <UserButton />
+            <CustomUserBtn role={userRole} />
           </div>
         </div>
       </div>
