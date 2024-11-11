@@ -65,13 +65,18 @@ const Header = async () => {
             </div>
           )}
           {user && (
-            <Link href="/user-profile" className="font-semibold text-slate-600">
-              Profile
-            </Link>
+            <>
+              {/* <Link
+                href="/user-profile"
+                className="font-semibold text-slate-600"
+              >
+                Profile
+              </Link> */}
+              <div className="ml-auto">
+                <CustomUserBtn role={userRole} />
+              </div>
+            </>
           )}
-          <div className="ml-auto">
-            <CustomUserBtn role={userRole} />
-          </div>
         </div>
       </div>
     </header>
