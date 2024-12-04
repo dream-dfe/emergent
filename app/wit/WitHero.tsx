@@ -25,22 +25,7 @@ export default function WitHero() {
           Business!
         </p>
       </div>
-      <div className="absolute bottom-8 w-full">
-        <div className="mx-5 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
-          <Button
-            asChild
-            className="min-w-56 rounded-full bg-[#38D200] hover:bg-[#0473ea]"
-          >
-            <Link href="https://docs.google.com/forms/d/e/1FAIpQLSd49LC589BOM-PR7LmkpiuGTN1ellYd-vbbNbM0OQJSwDStUw/viewform">
-              <span className="text-lg md:text-2xl"> APPLY NOW</span>{" "}
-            </Link>
-          </Button>{" "}
-          <h2 className="text-xl text-white md:text-2xl ">
-            {" "}
-            Deadline for application is 14<sup>th</sup> September 2024
-          </h2>
-        </div>
-      </div>
+      
     </section>
   );
 }

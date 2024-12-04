@@ -31,10 +31,10 @@ export default function WIT() {
             className="min-w-48 rounded-full bg-[#38D200] hover:bg-[#0473ea]"
           >
             <Link
-              href="https://docs.google.com/forms/d/e/1FAIpQLSd49LC589BOM-PR7LmkpiuGTN1ellYd-vbbNbM0OQJSwDStUw/viewform"
+              href={`/wit/cohorts/2024`}
               className="text-4xl"
             >
-              APPLY NOW{" "}
+              Learn more about our cohort
             </Link>
           </Button>{" "}
         </div>
