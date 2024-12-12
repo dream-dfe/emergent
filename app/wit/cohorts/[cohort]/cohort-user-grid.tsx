@@ -13,6 +13,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
+import { ScrollArea } from "@/components/ui/scroll-area";
 
 interface User {
   id: string;
@@ -60,11 +61,11 @@ export function CohortUserGrid() {
                     </Button>
                   </DialogTrigger>
                   <DialogContent className="overflow-hidden p-0 sm:max-w-[425px]">
-                  <div className="w-full h-64 bg-gray-100">
+                    <div className="h-64 w-full bg-gray-100">
                       <img
                         src={user.avatar}
                         alt={user.name}
-                         className="w-full h-full object-contain"
+                        className="h-full w-full object-contain"
                       />
                     </div>
                     <div className="p-6">
@@ -88,7 +89,9 @@ export function CohortUserGrid() {
                           <h4 className="mb-2 font-semibold">
                             Business Profile
                           </h4>
-                          <p className="text-sm">{user.business_profile}</p>
+                          <ScrollArea className="h-20">
+                            <p className="text-sm">{user.business_profile}</p>
+                          </ScrollArea>
                         </div>
                       </div>
                     </div>

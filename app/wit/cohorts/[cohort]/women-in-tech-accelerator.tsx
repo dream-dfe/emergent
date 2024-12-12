@@ -86,24 +86,7 @@ export default function WomenInTechAccelerator() {
 
   return (
     <div className="container mx-auto px-4 py-8 space-y-8">
-      <Card className="w-full border-none">
-        <CardHeader>
-          <CardTitle className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-600 text-center">
-            Standard Chartered Women in Tech Accelerator Programme: First Cohort
-          </CardTitle>
-          <CardDescription className="text-xl sm:text-2xl text-center">
-            Supporting 20 Botswana's Women Entrepreneurs
-          </CardDescription>
-        </CardHeader>
-        <CardContent>
-          <p className="text-lg mb-4">
-            Showcasing our TOP 20 of the Women in Tech Accelerator Programme 2024! The very first beneficiaries of this program in Botswana!
-          </p>
-          <p className="text-lg mb-4">
-            An opportunity to grow and scale women-led businesses through leveraging the power of technology towards greater social and environmental impact.
-          </p>
-        </CardContent>
-      </Card>
+      
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <Card className="w-full border-none">
