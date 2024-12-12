@@ -7,9 +7,11 @@ export default function CohortsLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <div>
-    <Header/>
-    {children}
-    <Footer/>
-    </div>;
+  return (
+    <>
+      <Header />
+      {children}
+      <Footer />
+    </>
+  );
 }

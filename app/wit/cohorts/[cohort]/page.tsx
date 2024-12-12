@@ -1,4 +1,4 @@
-import { UserGrid } from "./twenty-four";
+import { CohortUserGrid } from "./cohort-user-grid";
 import WomenInTechAccelerator from "./women-in-tech-accelerator";
 
 export default async function CohortPage({
@@ -10,7 +10,7 @@ export default async function CohortPage({
   return (
     <>
       <WomenInTechAccelerator />
-      <UserGrid/>
+      <CohortUserGrid />
     </>
   );
 }
