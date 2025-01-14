@@ -47,7 +47,7 @@ const Header = async () => {
           </Link>
         </div>
 
-        <div className="flex items-center justify-end space-x-4">
+        {/* <div className="flex items-center justify-end space-x-4">
           {!user && (
             <div className="flex space-x-3">
               <Button asChild variant="secondary">
@@ -63,19 +63,11 @@ const Header = async () => {
             </div>
           )}
           {user && (
-            <>
-              {/* <Link
-                href="/user-profile"
-                className="font-semibold text-slate-600"
-              >
-                Profile
-              </Link> */}
-              <div className="ml-auto">
-                <CustomUserBtn role={userRole} />
-              </div>
-            </>
+            <div className="ml-auto">
+              <CustomUserBtn role={userRole} />
+            </div>
           )}
-        </div>
+        </div> */}
       </div>
     </header>
   );

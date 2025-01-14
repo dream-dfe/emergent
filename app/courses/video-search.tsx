@@ -4,7 +4,9 @@ import { Input } from "@/components/ui/input";
 import { Search } from "lucide-react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useDebouncedCallback } from "use-debounce";
-export default function SearchComponent() {
+
+
+export default function VideoSearch() {
   const searchParams = useSearchParams();
   const { replace } = useRouter();
   const pathname = usePathname();

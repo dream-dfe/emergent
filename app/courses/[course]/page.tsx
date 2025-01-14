@@ -1,7 +1,5 @@
 import Footer from "@/components/common/Footer";
 import Header from "@/components/common/Header";
-import { auth } from "@clerk/nextjs/server";
-import { redirect } from "next/navigation";
 import YoutubeVid from "@/components/common/YoutubeVid";
 
 interface SearchParams {
@@ -16,14 +14,9 @@ export default function VideoContentPage({
 }: {
   searchParams: SearchParams;
 }) {
-  const { sessionClaims } = auth();
+ 
   const { title, videoId, description } = searchParams;
 
-  const allowedRoles = ["admin", "student", "manager"];
-
-  if (!allowedRoles.includes(sessionClaims?.metadata.role)) {
-    redirect("/");
-  }
   return (
     <>
       <Header />

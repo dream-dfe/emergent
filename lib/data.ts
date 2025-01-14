@@ -214,7 +214,7 @@ export const VoicesList = [
 //
 //
 //
-// 
+//
 //
 //
 //
@@ -232,8 +232,8 @@ export const videoList = [
     slug: "my-purpose-mod-1-video-1",
     videoId: "vwGji4RxTvA",
     banner: "/img/courses/dodigi.png",
-    description:
-      "",
+    description: "",
+    hashtags: ["purpose", "introduction", "module1"],
   },
   {
     id: "27c32932-7d56-4743-8be5-ae128e4665eb",
@@ -241,8 +241,8 @@ export const videoList = [
     slug: "my-purpose-mod-1-video-2",
     videoId: "uN9QHoXUHbI",
     banner: "/img/courses/dodigi.png",
-    description:
-      "",
+    description: "",
+    hashtags: ["purpose", "introduction", "module1"],
   },
   {
     id: "27c32932-7d56-4743-8be5-ae128e4665ec",
@@ -250,8 +250,8 @@ export const videoList = [
     slug: "my-purpose-mod-1-video-3",
     videoId: "DM6tJuL2Pjs",
     banner: "/img/courses/dodigi.png",
-    description:
-      "",
+    description: "",
+    hashtags: ["purpose", "introduction", "module1"],
   },
   {
     id: "27c32932-7d56-4743-8be5-ae128e4665ed",
@@ -259,8 +259,8 @@ export const videoList = [
     slug: "my-purpose-mod-1-video-4",
     videoId: "5V01QjVroBk",
     banner: "/img/courses/dodigi.png",
-    description:
-      "",
+    description: "",
+    hashtags: ["purpose", "introduction", "module1"],
   },
   {
     id: "27c32932-7d56-4743-8be5-ae128e4665ee",
@@ -268,8 +268,8 @@ export const videoList = [
     slug: "my-purpose-mod-1-video-5",
     videoId: "jzZrEZJIp0g",
     banner: "/img/courses/dodigi.png",
-    description:
-      "",
+    description: "",
+    hashtags: ["purpose", "introduction", "module1"],
   },
   {
     id: "27c32932-7d56-4743-8be5-ae128e4665ef",
@@ -277,8 +277,8 @@ export const videoList = [
     slug: "my-purpose-mod-2-video-2",
     videoId: "k942IUkrMhY",
     banner: "/img/courses/dodigi.png",
-    description:
-      "",
+    description: "",
+    hashtags: ["purpose", "introduction", "module2"],
   },
   {
     id: "27c32932-7d56-4743-8be5-ae128e4665eg",
@@ -286,8 +286,8 @@ export const videoList = [
     slug: "my-purpose-mod-2-video-2",
     videoId: "-9ulzmPAatk",
     banner: "/img/courses/dodigi.png",
-    description:
-      "",
+    description: "",
+    hashtags: ["purpose", "introduction", "module2"],
   },
   {
     id: "27c32932-7d56-4743-8be5-ae128e4665eh",
@@ -295,8 +295,8 @@ export const videoList = [
     slug: "my-purpose-mod-2-video-2",
     videoId: "hfIa1M8Njdc",
     banner: "/img/courses/dodigi.png",
-    description:
-      "",
+    description: "",
+    hashtags: ["purpose", "introduction", "module2"],
   },
   {
     id: "27c32932-7d56-4743-8be5-ae128e4665ei",
@@ -304,12 +304,10 @@ export const videoList = [
     slug: "my-purpose-mod-2-video-2",
     videoId: "I7gxRCFMVvU",
     banner: "/img/courses/dodigi.png",
-    description:
-      "",
+    description: "",
+    hashtags: ["purpose", "introduction", "module2"],
   },
- 
 ];
-
 
 export const witFaqs = [
   {
@@ -317,7 +315,9 @@ export const witFaqs = [
     qas: [
       {
         q: "Can I still apply if my business partner is a male?",
-        as: ["Yes, you can apply as long as the woman has at least 50% ownership of the company and she has >50% influence in decision making."]
+        as: [
+          "Yes, you can apply as long as the woman has at least 50% ownership of the company and she has >50% influence in decision making.",
+        ],
       },
       {
         q: "What type of businesses are eligible for the program?",
@@ -327,52 +327,54 @@ export const witFaqs = [
           "At least 50% Botswana-owned.",
           "Business has an annual revenue of P1 million or less than P1 million.",
           "Have 10 or fewer full-time paid employees.",
-          "Can be from any sector."
-        ]
+          "Can be from any sector.",
+        ],
       },
       {
         q: "I am over the age of 40, can I still apply?",
-        as: ["The program has an age limit of 40 at the time of application."]
+        as: ["The program has an age limit of 40 at the time of application."],
       },
       {
         q: "Can Standard Chartered clients participate in Women in Tech?",
         as: [
           "As beneficiaries of the program: No.",
-          "As volunteers: Yes, there are several ways to get involved, such as providing training, mentorship, links to networks, or accessing the services or products of beneficiaries. You can email us at bots@dreamfactoryfoundation.org."
-        ]
+          "As volunteers: Yes, there are several ways to get involved, such as providing training, mentorship, links to networks, or accessing the services or products of beneficiaries. You can email us at bots@dreamfactoryfoundation.org.",
+        ],
       },
       {
         q: "Can I still be considered if my business does not use technology?",
         as: [
-          "Yes, but you must demonstrate an interest and intention to use technology (tech-enabled) in your business. If your business demonstrates innovation in your product/service or operations, that too is equally considered."
-        ]
-      }
-    ]
+          "Yes, but you must demonstrate an interest and intention to use technology (tech-enabled) in your business. If your business demonstrates innovation in your product/service or operations, that too is equally considered.",
+        ],
+      },
+    ],
   },
   {
     group: "Application Process",
     qas: [
       {
         q: "How can I apply?",
-        as: ["Only online applications will be accepted. The application form can be found on the Dream Factory Foundation Emergent website: https://academy.dreamfactory.africa/"]
+        as: [
+          "Only online applications will be accepted. The application form can be found on the Dream Factory Foundation Emergent website: https://academy.dreamfactory.africa/",
+        ],
       },
       {
         q: "Can I apply with more than one business?",
         as: [
-          "If you have several enterprises, you can make more than one application, but only one of your applications can be approved for the program."
-        ]
+          "If you have several enterprises, you can make more than one application, but only one of your applications can be approved for the program.",
+        ],
       },
       {
         q: "Can my partner and I both be part of the program?",
-        as: ["Only one representative can be part of the program."]
+        as: ["Only one representative can be part of the program."],
       },
       {
         q: "How many female entrepreneurs will be selected?",
         as: [
-          "40 female-owned businesses will be shortlisted for an in-person bootcamp, and thereafter, a final selection of 20 female-owned businesses will be inducted into the program."
-        ]
-      }
-    ]
+          "40 female-owned businesses will be shortlisted for an in-person bootcamp, and thereafter, a final selection of 20 female-owned businesses will be inducted into the program.",
+        ],
+      },
+    ],
   },
   {
     group: "Program Details",
@@ -380,32 +382,32 @@ export const witFaqs = [
       {
         q: "What is the objective of the WiT program?",
         as: [
-          "Standard Chartered Women in Tech (WiT) Incubators support female-led entrepreneurial teams with business management training, mentoring, and seed funding for the scale-up of innovative or tech-enabled women-led small and growing businesses."
-        ]
+          "Standard Chartered Women in Tech (WiT) Incubators support female-led entrepreneurial teams with business management training, mentoring, and seed funding for the scale-up of innovative or tech-enabled women-led small and growing businesses.",
+        ],
       },
       {
         q: "Who is implementing the Standard Chartered Women in Tech Programme in Botswana?",
         as: [
-          "Dream Factory Foundation (DFF) is the implementation partner in Botswana. DFF is an award-winning women-led non-profit organization with impact across Botswana, Zimbabwe, Namibia, Zambia, and South Africa."
-        ]
+          "Dream Factory Foundation (DFF) is the implementation partner in Botswana. DFF is an award-winning women-led non-profit organization with impact across Botswana, Zimbabwe, Namibia, Zambia, and South Africa.",
+        ],
       },
       {
         q: "Why is there a focus on technology?",
         as: [
-          "The incubators were designed to address gender disparity in the technology sector and use technology to tackle social challenges faced by communities. They are part of Standard Chartered's Futuremakers initiative to tackle inequality and promote economic inclusion."
-        ]
+          "The incubators were designed to address gender disparity in the technology sector and use technology to tackle social challenges faced by communities. They are part of Standard Chartered's Futuremakers initiative to tackle inequality and promote economic inclusion.",
+        ],
       },
       {
         q: "Will the Bank offer financial services and products to beneficiary entrepreneurs?",
         as: [
-          "The Bank will not offer financial services or products to beneficiary entrepreneurs through the program. Beneficiaries can, however, access the Bank's financial services and products in their own individual capacity outside of the program."
-        ]
+          "The Bank will not offer financial services or products to beneficiary entrepreneurs through the program. Beneficiaries can, however, access the Bank's financial services and products in their own individual capacity outside of the program.",
+        ],
       },
       {
         q: "What can I do with the prize money?",
-        as: ["The seed funding is to be used directly for the business."]
-      }
-    ]
+        as: ["The seed funding is to be used directly for the business."],
+      },
+    ],
   },
   {
     group: "Program Implementation",
@@ -413,16 +415,16 @@ export const witFaqs = [
       {
         q: "What is the duration of the program?",
         as: [
-          "The program launches in September 2024 and ends in January 2025. The total duration is 5 months."
-        ]
+          "The program launches in September 2024 and ends in January 2025. The total duration is 5 months.",
+        ],
       },
       {
         q: "Where will the program take place?",
         as: [
-          "This is a hybrid program where 70% of activities will take place online, and 30% will be in person in Gaborone. A program calendar will be shared with selected participants."
-        ]
-      }
-    ]
+          "This is a hybrid program where 70% of activities will take place online, and 30% will be in person in Gaborone. A program calendar will be shared with selected participants.",
+        ],
+      },
+    ],
   },
   {
     group: "Contact Details",
@@ -430,9 +432,9 @@ export const witFaqs = [
       {
         q: "If I need to ask a question about the program or application, who do I contact?",
         as: [
-          "You can email bots@dreamfactoryfoundation.org or send a WhatsApp to the provided number."
-        ]
-      }
-    ]
-  }
+          "You can email bots@dreamfactoryfoundation.org or send a WhatsApp to the provided number.",
+        ],
+      },
+    ],
+  },
 ];

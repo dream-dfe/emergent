@@ -20,22 +20,9 @@ export default async function CohortPage({
         <Card className="w-full border-none">
           <CardHeader>
             <CardTitle className="text-center text-3xl font-bold text-slate-600 sm:text-4xl md:text-5xl">
-              Standard Chartered Women in Tech Accelerator Programme: First
-              Cohort
+              Standard Chartered Women in Tech Accelerator Programme
             </CardTitle>
-            <CardDescription className="text-center text-xl sm:text-2xl">
-              Supporting 20 Botswana's Women Entrepreneurs
-            </CardDescription>
           </CardHeader>
-          <CardContent>
-            <p className="mb-4 text-lg">
-              Showcasing our TOP 20 of the Women in Tech Accelerator Programme
-              2024! The very first beneficiaries of this program in Botswana!.
-              An opportunity to grow and scale women-led businesses through
-              leveraging the power of technology towards greater social and
-              environmental impact.
-            </p>
-          </CardContent>
         </Card>
       </div>
       <CohortUserGrid />

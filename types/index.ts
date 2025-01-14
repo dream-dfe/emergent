@@ -9,6 +9,7 @@ export type VoiceType = {
   videoId: string;
   slug: string;
   facilitator: string;
+ 
 };
 
 export type ProgramDataType = {
@@ -70,4 +71,5 @@ export type VideoType = {
   videoId: string
   banner: string
   description: string
+  hashtags: string[],
 }

@@ -1,6 +1,6 @@
 "use client";
 
-import { Globe } from "lucide-react";
+import { BriefcaseBusiness, Globe } from "lucide-react";
 import { cohort2024Data } from "./cohort-data";
 import { RiProfileFill } from "react-icons/ri";
 import { Button } from "@/components/ui/button";
@@ -14,6 +14,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import Link from "next/link";
 
 interface User {
   id: string;
@@ -98,10 +99,16 @@ export function CohortUserGrid() {
                   </DialogContent>
                 </Dialog>
 
-                <p className="flex items-center space-x-2 text-sm text-green-600">
-                  <Globe className="h-4 w-4" />
+                <p className="flex items-center space-x-2 text-sm text-muted-foreground">
+                  <BriefcaseBusiness className="h-4 w-4" />
                   <span>Sector: {user.sector}</span>
                 </p>
+                {user.website && 
+                <p className="flex items-center space-x-2 text-sm text-green-600">
+                  <Globe className="h-4 w-4" />
+                  <Link href={user.website} target="_blank">Website</Link>
+                </p>
+                }
               </div>
             </CardContent>
           </Card>
