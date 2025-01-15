@@ -9,7 +9,7 @@ export type VoiceType = {
   videoId: string;
   slug: string;
   facilitator: string;
- 
+  hashtags: string[];
 };
 
 export type ProgramDataType = {

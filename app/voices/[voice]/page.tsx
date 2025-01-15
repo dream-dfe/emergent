@@ -1,4 +1,3 @@
-import Container from "@/components/common/Container";
 import YoutubeVid from "../../../components/common/YoutubeVid";
 import { VoicesList } from "@/lib/data";
 import Footer from "@/components/common/Footer";
@@ -22,7 +21,7 @@ export default async function VoicePage({
   return (
     <>
       <Header />
-      <section className="container">
+      <section className="container my-12">
         {filteredVoices.map((voice) => (
           <div key={voice.id}>
             <div className="flex flex-col p-4">

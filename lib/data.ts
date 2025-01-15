@@ -175,6 +175,7 @@ export const VoicesList = [
     videoId: "XtYANqr2IwY",
     slug: "financial-models-mpo",
     facilitator: "Mpodumo Doubada",
+    hashtags: ["finance", "business", "modeling"],
   },
   {
     id: "24036840-3fa3-4b1d-9330-42dd10b4f58f",
@@ -185,6 +186,7 @@ export const VoicesList = [
     videoId: "RS3tXH3Ka5w",
     slug: "raising-capital-fred",
     facilitator: "Fred Maunze",
+    hashtags: ["funding", "startup", "investment"],
   },
   {
     id: "b36df210-b7ed-4994-8dff-248b04f90a5f",
@@ -195,17 +197,30 @@ export const VoicesList = [
     videoId: "LOiiVToOFno",
     slug: "building-brand-zuki",
     facilitator: "Zukiswa Mqolomba",
+    hashtags: ["branding", "marketing", "personalDevelopment"],
   },
-  // {
-  //   id: "cfdcf26e-e590-4c30-add4-874b9a0e3791",
-  //   title: "Launching Branding",
-  //   img: "/img/voices/tumi.jpg",
-  //   event: "DoDigi Program",
-  //   date: " ",
-  //   videoId: "NK5lVUjHR-c",
-  //   slug: "launching-branding-tumi",
-  //   facilitator: "Tumi Morule",
-  // },
+  {
+    id: "b7f4e1a1-3cf1-4b7a-95a9-5628731cbee1",
+    title: "Innovation, Technology and Sustainability",
+    img: "/img/voices/raul.jpg",
+    event: "Emergent Business Masterclass",
+    date: " ",
+    videoId: "Xdo-rCCL2vw",
+    slug: "innovation-technology-and-sustainability-raul",
+    facilitator: "Raul Saenz",
+    hashtags: ["innovation", "technology", "sustainability"],
+  },
+  {
+    id: "b7f4e1a1-3cf1-4b7a-95a9-5628731cbee2",
+    title: "How to pitch effectively through storytelling ",
+    img: "/img/voices/zoya.jpg",
+    event: "Emergent Business Masterclass",
+    date: " ",
+    videoId: "Fl48mJhq9Ns",
+    slug: "how-to-pitch-effectively-through-storytelling-zoya",
+    facilitator: "Zoya Mabuto",
+    hashtags: ["pitch", "storytelling"],
+  },
 ];
 
 //
@@ -218,7 +233,7 @@ export const VoicesList = [
 //
 //
 //
-// b7f4e1a1-3cf1-4b7a-95a9-5628731cbee1
+//
 // 564208ba-3494-49a7-9e8b-a387bb5c6d9e
 // a4fcc28a-7a87-41c8-8f44-e3835eab92da
 // c0ecc012-2b2a-45ce-ab06-c98bbc9c3f81
