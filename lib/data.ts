@@ -197,7 +197,7 @@ export const VoicesList = [
     videoId: "LOiiVToOFno",
     slug: "building-brand-zuki",
     facilitator: "Zukiswa Mqolomba",
-    hashtags: ["branding", "marketing", "personalDevelopment"],
+    hashtags: ["branding", "marketing"],
   },
   {
     id: "b7f4e1a1-3cf1-4b7a-95a9-5628731cbee1",
@@ -219,6 +219,17 @@ export const VoicesList = [
     videoId: "Fl48mJhq9Ns",
     slug: "how-to-pitch-effectively-through-storytelling-zoya",
     facilitator: "Zoya Mabuto",
+    hashtags: ["pitch", "storytelling"],
+  },
+  {
+    id: "b7f4e1a1-3cf1-4b7a-95a9-5628731cbee3",
+    title: "The first 5 min of pitching",
+    img: "/img/voices/indira.jpg",
+    event: "Emergent Business Masterclass",
+    date: " ",
+    videoId: "oFWpSCTCtwU",
+    slug: "the-first-5-min-of-pitching-with-indira-tshiteta",
+    facilitator: "Indira Tshiteta",
     hashtags: ["pitch", "storytelling"],
   },
 ];

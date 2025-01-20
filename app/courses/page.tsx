@@ -1,31 +1,57 @@
-import Footer from "@/components/common/Footer";
-import Header from "@/components/common/Header";
-import VideoSearch from "./video-search";
-import { Separator } from "@/components/ui/separator";
-import MySearches from "./video-searches";
-import VideoList from "./video-list";
-import { videoList } from "@/lib/data";
-import { FloatingMessage } from "./floating-msg";
+import Image from "next/image"
+import Footer from "@/components/common/Footer"
+import Header from "@/components/common/Header"
+import { FloatingMessage } from "./floating-msg"
 
 const CoursesPage = () => {
+  const clients = [
+    { name: "Client 1", logo: "/img/partners/allangray.png" },
+    { name: "Client 2", logo: "/img/partners/standardbank.png" },
+    { name: "Client 3", logo: "/img/partners/ninty-one.png" },
+    { name: "Client 4", logo: "/img/partners/lemonaid_logo.png" },
+    {name: "Client 4", logo: "/img/partners/dafrica.png" },
+    // Add more clients as needed
+  ]
+
   return (
     <div className="flex min-h-screen flex-col">
       <Header />
       <main className="flex-grow bg-gray-50 py-12">
         <div className="container mx-auto px-4">
-          <h1 className="mb-8 text-3xl font-bold text-gray-900">
-            Emergent Courses
-          </h1>
-          <VideoSearch />
-          <MySearches />
-          <Separator className="my-8" />
-          <VideoList videos={videoList} />
+          <h1 className="mb-8 text-3xl font-bold text-gray-900">Emergent Courses</h1>
+          <section className="mb-12">
+            {/* <h2 className="mb-4 text-2xl font-semibold text-gray-800">Our Academy</h2> */}
+            <p className="mb-4 text-lg text-gray-600">
+              Our Academy offers several business and personal development courses. If you are interested in learning
+              about our courses, email us at{" "}
+              <a href="mailto:dreams@dreamfactoryfoundation.africa" className="text-blue-600 hover:underline">
+              dreams@dreamfactoryfoundation.africa
+              </a>
+            </p>
+          </section>
+          <section>
+            <h2 className="mb-6 text-2xl font-semibold text-gray-800">Clients We Have Worked With</h2>
+            <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
+              {clients.map((client) => (
+                <div key={client.name} className="flex items-center justify-center p-4 bg-white rounded-lg shadow">
+                  <Image
+                    src={client.logo || "/placeholder.svg"}
+                    alt={`${client.name} logo`}
+                    width={100}
+                    height={100}
+                    className="object-contain"
+                  />
+                </div>
+              ))}
+            </div>
+          </section>
         </div>
       </main>
       <Footer />
       <FloatingMessage />
     </div>
-  );
-};
+  )
+}
 
-export default CoursesPage;
+export default CoursesPage
+

@@ -26,7 +26,7 @@ const VoiceCard = ({ voice }: VoiceCardProps) => {
         />
       </div>
       <div className="flex flex-1 flex-col p-4">
-        <h3 className="mb-2 line-clamp-2 text-lg font-semibold text-gray-900">{voice.title}</h3>
+        <h3 className="mb-2 line-clamp-1 text-lg font-semibold text-gray-900">{voice.title}</h3>
         <p className="mb-4 line-clamp-2 text-sm text-gray-500">{voice.facilitator}</p>
         <div className="mt-auto flex flex-wrap gap-2">
           {voice.hashtags && voice.hashtags.map((tag, index) => (
