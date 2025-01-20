@@ -2,6 +2,7 @@ import Image from "next/image"
 import Footer from "@/components/common/Footer"
 import Header from "@/components/common/Header"
 import { FloatingMessage } from "./floating-msg"
+import YoutubeVid from "@/components/common/YoutubeVid"
 
 const CoursesPage = () => {
   const clients = [
@@ -29,6 +30,7 @@ const CoursesPage = () => {
               </a>
             </p>
           </section>
+          <YoutubeVid videoId="KkTkRsMySX8" title="2024 WOMEN IN TECH TOP 40 BOOTCAMP"/>
           <section>
             <h2 className="mb-6 text-2xl font-semibold text-gray-800">Clients We Have Worked With</h2>
             <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">

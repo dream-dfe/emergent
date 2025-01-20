@@ -1,10 +1,10 @@
-import Image from "next/image";
-import Container from "../common/Container";
+import Image from "next/image"
+import { Card, CardContent } from "@/components/ui/card"
 
 // Define a TypeScript interface for partner data
 interface Partner {
-  src: string;
-  alt: string;
+  src: string
+  alt: string
 }
 
 const fundingPartners: Partner[] = [
@@ -14,33 +14,34 @@ const fundingPartners: Partner[] = [
   { src: "/img/partners/hci_logo.png", alt: "Hci" },
   { src: "/img/partners/google_logo.png", alt: "Google" },
   { src: "/img/partners/bowmans.png", alt: "Bowmans" },
-];
-
+]
 
 const OurPartners = () => {
   return (
-    <section className=" my-16 py-8 mx-3">
-      <div className="flex justify-center items-center my-12">
-        <h2 className=" font-sans text-3xl font-bold tracking-tight text-slate-600 sm:text-4xl sm:leading-none">
-          Funding Partners
-        </h2>
-      </div>
-
-      <div className="grid grid-cols-1 justify-items-center  sm:grid-cols-2   md:grid-cols-3 lg:grid-cols-6">
-        {fundingPartners.map((partner, index) => (
-          <div className="  w-28 h-28 overflow-hidden  " key={index}>
-            <Image
-              src={partner.src}
-              width={100}
-              height={100}
-              alt={partner.alt}
-              className="w-full object-cover"
-            />
-          </div>
-        ))}
+    <section className="py-16 bg-gradient-to-b from-white to-gray-50">
+      <div className="container mx-auto px-4">
+        <h2 className="text-3xl font-bold text-center text-gray-800 mb-12 sm:text-4xl">Our Funding Partners</h2>
+        <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
+          {fundingPartners.map((partner, index) => (
+            <Card key={index} className="bg-white shadow-md hover:shadow-lg transition-shadow duration-300">
+              <CardContent className="p-4 flex items-center justify-center h-40">
+                <div className="relative w-full h-full">
+                  <Image
+                    src={partner.src || "/placeholder.svg"}
+                    alt={partner.alt}
+                    layout="fill"
+                    objectFit="contain"
+                    className="transition-transform duration-300 hover:scale-105"
+                  />
+                </div>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default OurPartners;
+export default OurPartners
+

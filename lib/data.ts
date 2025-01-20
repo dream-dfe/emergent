@@ -230,7 +230,18 @@ export const VoicesList = [
     videoId: "oFWpSCTCtwU",
     slug: "the-first-5-min-of-pitching-with-indira-tshiteta",
     facilitator: "Indira Tshiteta",
-    hashtags: ["pitch", "storytelling"],
+    hashtags: ["pitch", "impression"],
+  },
+  {
+    id: "564208ba-3494-49a7-9e8b-a387bb5c6d9e",
+    title: "Launching a new product: Branding & Marketing",
+    img: "/img/voices/tumi.jpg",
+    event: "Emergent Business Masterclass",
+    date: " ",
+    videoId: "nRkOSkQYg7U",
+    slug: "launching-a-new-product-branding-and-marketing-tumi",
+    facilitator: "Tumi Morule",
+    hashtags: ["branding", "marketing"],
   },
 ];
 
@@ -245,7 +256,7 @@ export const VoicesList = [
 //
 //
 //
-// 564208ba-3494-49a7-9e8b-a387bb5c6d9e
+// 
 // a4fcc28a-7a87-41c8-8f44-e3835eab92da
 // c0ecc012-2b2a-45ce-ab06-c98bbc9c3f81
 // 34d5c47d-4ca1-47d6-be66-ba194cd7410f
