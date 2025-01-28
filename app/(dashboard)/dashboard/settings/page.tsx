@@ -1,8 +1,8 @@
 import { auth } from "@clerk/nextjs/server";
 import { redirect } from "next/navigation";
 
-export default function Settings() {
-  const { sessionClaims } = auth();
+export default async function Settings() {
+  const { sessionClaims } = await auth();
 
   const allowedRoles = ["admin", "manager"];
 

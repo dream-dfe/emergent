@@ -12,7 +12,7 @@ const getData = async () => {
 };
 
 export default async function Programmes() {
-  const { sessionClaims } = auth();
+  const { sessionClaims } = await auth();
 
   const allowedRoles = ["admin", "manager"];
 

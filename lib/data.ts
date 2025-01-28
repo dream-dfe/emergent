@@ -42,8 +42,8 @@ export const ProgramsData = [
     title: "Emergent Women Programme",
     imageSrc: "/img/programs/wwd2.jpg",
     descr: "Trains unemployed women to develop businesses at ideation stage.",
-    status: "Active",
-    pathUrl: "/active-programmes",
+    status: "Past",
+    pathUrl: "/past-programmes",
     slug: "emergent-women",
     website: "https://dreamfactory.africa/",
     btnTitle: "Learn More",
@@ -78,7 +78,7 @@ export const ProgramsData = [
     imageSrc: "/img/programs/wwd1.png",
     descr:
       "DoDigi (do digital) is a regional program operating across SADC to train aspiring and current entrepreneurs to digitise their businesses and how to use technology for scale. Partners with the Meeticks e-commerce platform for trading via WhatsApp Chatbot. ",
-    status: "Active",
+    status: "Past",
     pathUrl: "/active-programmes",
     slug: "dodigi",
     website: "https://dodigi.africa/",
@@ -116,7 +116,7 @@ export const ProgramsData = [
     imageSrc: "/img/programs/wwd4.jpg",
     descr:
       "Gender-lens Investing: A Southern Africa research project for female entrepreneurship",
-    status: "Open",
+    status: "Reasearch",
     pathUrl: "/open-applications",
     slug: "arise",
     website: "https://goldyouth.org/contact/",

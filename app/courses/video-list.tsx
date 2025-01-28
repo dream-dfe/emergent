@@ -2,8 +2,7 @@
 
 import { VideoType } from "@/types";
 import VideoCard from "./video-card";
-import { useEffect, useState } from "react";
-import { Input } from "@/components/ui/input";
+import { useEffect, useState, useCallback } from "react";
 import { Badge } from "@/components/ui/badge";
 
 export default function VideoList({ videos }: { videos: VideoType[] }) {
@@ -20,7 +19,7 @@ export default function VideoList({ videos }: { videos: VideoType[] }) {
     );
   };
 
-  const filterVideos = () => {
+  const filterVideos = useCallback(() => {
     if (selectedTags.length === 0) {
       setFilteredVideos(videos);
     } else {
@@ -30,11 +29,11 @@ export default function VideoList({ videos }: { videos: VideoType[] }) {
         ),
       );
     }
-  };
+  }, [selectedTags, videos]);
 
   useEffect(() => {
     filterVideos();
-  }, [selectedTags]);
+  }, [filterVideos]);
 
   return (
     <section className="mx-auto max-w-screen-xl flex-1 space-y-10 px-4">

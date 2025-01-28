@@ -179,7 +179,7 @@ export default function WomenInTechAccelerator() {
           <p className="text-lg font-semibold">Reshaping the future of entrepreneurship in Botswana</p>
           <p>We believe that when women-led businesses thrive, communities thrive!</p>
           <blockquote className="border-l-4 border-primary pl-4 italic">
-            The WiT accelerator program in Botswana aims to be a catalyst for unlocking the boundless potential of Botswana's women entrepreneurs, paving the way for a future where innovation, technology, and gender equality converge to drive transformative change.
+            The WiT accelerator program in Botswana aims to be a catalyst for unlocking the boundless potential of Botswana&apos;s women entrepreneurs, paving the way for a future where innovation, technology, and gender equality converge to drive transformative change.
           </blockquote>
         </CardContent>
       </Card>

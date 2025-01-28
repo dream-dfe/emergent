@@ -11,12 +11,11 @@ export async function setRole(formData: FormData) {
   }
 
   try {
-    const res = await clerkClient().users.updateUser(
-      formData.get("id") as string,
-      {
-        publicMetadata: { role: formData.get("role") },
-      },
-    );
+    const res = await (
+      await clerkClient()
+    ).users.updateUser(formData.get("id") as string, {
+      publicMetadata: { role: formData.get("role") },
+    });
 
     return { message: res.publicMetadata };
   } catch (err) {
@@ -25,15 +24,18 @@ export async function setRole(formData: FormData) {
 }
 
 export async function getUsers(): Promise<AuthUser[]> {
-  // Check that the user trying to set the role is an admin
   if (!checkRole("admin")) {
+    console.error("Unauthorized: User is not an admin.");
     throw new Error("Unauthorized");
   }
 
   try {
-    const res = await clerkClient().users.getUserList();
+    const res = await (await clerkClient()).users.getUserList();
 
-    // Map through the users and pick only the required fields
+    if (!res || !res.data) {
+      throw new Error("Clerk API response is invalid.");
+    }
+
     const filteredUsers: AuthUser[] = res.data.map((user: any) => ({
       id: user.id,
       banned: user.banned,
@@ -44,9 +46,9 @@ export async function getUsers(): Promise<AuthUser[]> {
       lastSignInAt: user.lastSignInAt,
       firstName: user.firstName,
       lastName: user.lastName,
-      publicMetadata: user.publicMetadata,
+      publicMetadata: user.publicMetadata || {},
       emailAddresses: user.emailAddresses.map(
-        (email: { emailAddress: any }) => email.emailAddress,
+        (email: { emailAddress: string }) => email.emailAddress,
       ),
       phoneNumbers: user.phoneNumbers.map((phone: any) => phone.number),
       lastActiveAt: user.lastActiveAt,
@@ -54,6 +56,7 @@ export async function getUsers(): Promise<AuthUser[]> {
 
     return filteredUsers;
   } catch (err) {
-    throw new Error("Error");
+    console.error("Error in getUsers:", err);
+    throw new Error("Error fetching users.");
   }
 }

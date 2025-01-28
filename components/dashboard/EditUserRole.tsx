@@ -102,7 +102,7 @@ export default function EditUserRole({
       </SheetTrigger>
       <SheetContent>
         <SheetHeader>
-          <SheetTitle>Change {name}'s role</SheetTitle>
+          <SheetTitle>Change {name}&apos;s role</SheetTitle>
           <SheetDescription>
             Make sure to change to the relevant role
           </SheetDescription>

@@ -4,8 +4,8 @@ import { redirect } from "next/navigation";
 import { auth } from "@clerk/nextjs/server";
 import BookingsCards from "./bookings-cards";
 
-export default function Bookings() {
-  const { sessionClaims } = auth();
+export default async function Bookings() {
+  const { sessionClaims } = await auth();
 
   const allowedRoles = ["admin", "student", "manager"];
 

@@ -15,6 +15,7 @@ import {
 } from "@/components/ui/dialog";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import Link from "next/link";
+import Image from "next/image";
 
 interface User {
   id: string;
@@ -63,9 +64,11 @@ export function CohortUserGrid() {
                   </DialogTrigger>
                   <DialogContent className="overflow-hidden p-0 sm:max-w-[425px]">
                     <div className="h-64 w-full bg-gray-100">
-                      <img
+                      <Image
                         src={user.avatar}
                         alt={user.name}
+                        width={2084}
+                        height={2084}
                         className="h-full w-full object-contain"
                       />
                     </div>

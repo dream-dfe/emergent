@@ -4,13 +4,13 @@ import Header from "@/components/common/Header";
 import { getProgrammeDataById } from "@/lib/fetchData";
 
 export default async function PastProgramPage({
-  params,
   searchParams,
 }: {
-  params: { slug: string };
-  searchParams: { [key: string]: string | string[] | undefined };
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 }) {
-  const id = searchParams.id as string;
+  const resolvedSearchParams = await searchParams;
+
+  const id = resolvedSearchParams.id as string;
   const programme = await getProgrammeDataById(id);
   const img = programme?.imageSrc;
   const attributes = programme?.attributes as string[];

@@ -4,13 +4,12 @@ import Footer from "@/components/common/Footer";
 import Header from "@/components/common/Header";
 
 export default async function VoicePage({
-  params,
   searchParams,
 }: {
-  params: { lecture: string };
-  searchParams: { [key: string]: string | string[] | undefined };
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 }) {
-  const id = searchParams.id;
+  const resolvedSearchParams = await searchParams;
+  const id = resolvedSearchParams.id;
 
   function filterVoicesById(id: string) {
     return VoicesList.filter((voice) => voice.id === id);

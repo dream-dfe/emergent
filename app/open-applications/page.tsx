@@ -1,26 +1,35 @@
 import Footer from "@/components/common/Footer";
 import Header from "@/components/common/Header";
 import ProgrammesComponent from "@/components/common/ProgrammesComponent";
+import ProgramsPlaceHolder from "@/components/common/programs-placeholder";
 import { getProgrammesDataByStatus } from "@/lib/fetchData";
 import { ProgramDataType } from "@/types";
 
-
 export default async function OpenApplicationsPage() {
-
-  const programData = await getProgrammesDataByStatus('Open');
+  const programData = await getProgrammesDataByStatus("Open");
 
   return (
     <>
-    <Header/>
-    <div className="text-center py-12 bg-violet-600">
-      <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-white ">
-        Open Applications
-      </h2>
-    </div>
+      <Header />
+      <div className="relative bg-gradient-to-r from-violet-600 to-indigo-600 py-24">
+        <div className="container relative mx-auto px-4">
+          <h1 className="mb-4 text-center text-4xl font-extrabold text-white md:text-5xl">
+            Open applications
+          </h1>
+          <p className="mx-auto max-w-2xl text-center text-xl text-white">
+            Current Opportunities: Join Our Active Initiatives
+          </p>
+        </div>
+      </div>
 
-    <ProgrammesComponent data={programData as ProgramDataType[]} />
-    <Footer/>
-  </>
-  )
+      <div className="container mx-auto px-4 py-12">
+        {programData && programData.length > 0 ? (
+          <ProgrammesComponent data={programData as ProgramDataType[]} />
+        ) : (
+          <ProgramsPlaceHolder category="Open"/>
+        )}
+      </div>
+      <Footer />
+    </>
+  );
 }
-

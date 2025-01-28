@@ -2,9 +2,9 @@ import { redirect } from "next/navigation";
 import NewProgrammeForm from "./NewProgrammeForm";
 import { auth } from "@clerk/nextjs/server";
 
-export default function AddProgramme() {
+export default async function AddProgramme() {
   
-  const { sessionClaims } = auth();
+  const { sessionClaims } = await auth();
 
   const allowedRoles = ["admin", "manager"];
 

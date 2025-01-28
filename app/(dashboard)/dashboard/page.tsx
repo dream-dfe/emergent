@@ -4,7 +4,7 @@ import { redirect } from "next/navigation";
 import React from "react";
 
 export default async function DashBoard() {
-  const { sessionClaims } = auth();
+  const { sessionClaims } = await auth();
   if (sessionClaims?.metadata.role !== "admin") {
     redirect("/");
   }

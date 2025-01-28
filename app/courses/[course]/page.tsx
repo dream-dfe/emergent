@@ -9,12 +9,13 @@ interface SearchParams {
   description?: string;
 }
 
-export default function VideoContentPage({
-  searchParams,
-}: {
-  searchParams: SearchParams;
+export default async function VideoContentPage(props: {
+  searchParams: Promise<SearchParams>;
 }) {
- 
+  // Await the resolution of the searchParams promise
+  const searchParams = await props.searchParams;
+
+  // Destructure the values from searchParams
   const { title, videoId, description } = searchParams;
 
   return (

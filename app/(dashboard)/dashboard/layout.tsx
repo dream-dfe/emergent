@@ -2,7 +2,7 @@ import { BreadCrumbItem } from "@/components/dashboard/breadcrumb-item";
 import DashHeader from "@/components/dashboard/DashHeader";
 import { AdminRoutes } from "@/components/dashboard/routes";
 import SideNavBar from "@/components/dashboard/side-nav-bar";
-import { auth } from "@clerk/nextjs/server";
+// import { auth } from "@clerk/nextjs/server";
 import Image from "next/image";
 
 export default async function AdminLayout({
@@ -10,7 +10,7 @@ export default async function AdminLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  auth().protect();
+  // auth().protect();
   return (
     <div className="flex min-h-screen">
       <aside className="w-16 p-4 md:block">
